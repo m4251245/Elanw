@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JobSearchCtl">
+            <connections>
+                <outlet property="cancelBtn" destination="chW-dq-tyt" id="jxf-co-IBp"/>
+                <outlet property="searchBar_" destination="qUE-Zi-fxu" id="Gw9-6g-MVw"/>
+                <outlet property="searchContentView_" destination="ydE-I7-6bb" id="cry-2f-IaR"/>
+                <outlet property="tableView_" destination="I6J-Xp-Ahy" id="YJP-re-Q9C"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="I6J-Xp-Ahy">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="ydE-I7-6bb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="I6J-Xp-Ahy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8zX-Gd-hg3"/>
+                <constraint firstAttribute="trailing" secondItem="I6J-Xp-Ahy" secondAttribute="trailing" id="apt-H4-utt"/>
+                <constraint firstAttribute="bottom" secondItem="I6J-Xp-Ahy" secondAttribute="bottom" id="ucz-kz-XNq"/>
+                <constraint firstItem="I6J-Xp-Ahy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vgN-h9-OYt"/>
+            </constraints>
+            <point key="canvasLocation" x="-301" y="277"/>
+        </view>
+        <searchBar hidden="YES" contentMode="redraw" placeholder="搜索关键字" id="qUE-Zi-fxu">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.88235294117647056" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="barTintColor" red="0.84292018413543701" green="0.15297067165374756" blue="0.18796995282173157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <textInputTraits key="textInputTraits"/>
+            <point key="canvasLocation" x="-803" y="99"/>
+        </searchBar>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="chW-dq-tyt">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+            <state key="normal" title="取消">
+                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <connections>
+                <action selector="cancelBtnRespone:" destination="-1" eventType="touchUpInside" id="Cuv-aq-lfG"/>
+            </connections>
+            <point key="canvasLocation" x="-589" y="120"/>
+        </button>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

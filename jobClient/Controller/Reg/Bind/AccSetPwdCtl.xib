@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccSetPwdCtl">
+            <connections>
+                <outlet property="confirmPwdTF" destination="iwF-h6-pef" id="vz6-s6-7XO"/>
+                <outlet property="pwdTF" destination="sAO-oe-It2" id="bLz-iU-hBQ"/>
+                <outlet property="saveBtn" destination="6ah-Kt-aWA" id="9ha-pk-Ysb"/>
+                <outlet property="scrollView_" destination="lQW-MK-F4X" id="w44-dl-zZB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQW-MK-F4X">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请妥善保管你的密码，6-20位英文或数字，区分大小写" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="P5s-LD-MUO">
+                            <rect key="frame" x="20" y="24" width="280" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sAO-oe-It2" customClass="RegCustomTextField">
+                            <rect key="frame" x="20" y="60" width="280" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="bhm-Hn-9Ps"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="再次输入密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iwF-h6-pef" customClass="RegCustomTextField">
+                            <rect key="frame" x="20" y="113" width="280" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Lgu-hc-F3g"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ah-Kt-aWA" customClass="RegCustomButton">
+                            <rect key="frame" x="20" y="176" width="280" height="40"/>
+                            <color key="backgroundColor" red="0.84313725490196079" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="gMG-M1-cqb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="保存">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="EXx-qh-pC2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="P5s-LD-MUO" firstAttribute="leading" secondItem="lQW-MK-F4X" secondAttribute="leading" constant="20" id="4AD-Kf-8iv"/>
+                        <constraint firstItem="6ah-Kt-aWA" firstAttribute="leading" secondItem="iwF-h6-pef" secondAttribute="leading" id="99C-qp-rdX"/>
+                        <constraint firstItem="iwF-h6-pef" firstAttribute="trailing" secondItem="sAO-oe-It2" secondAttribute="trailing" id="J0W-s7-diu"/>
+                        <constraint firstAttribute="bottom" secondItem="6ah-Kt-aWA" secondAttribute="bottom" constant="343" id="JSs-lU-g3y"/>
+                        <constraint firstItem="iwF-h6-pef" firstAttribute="top" secondItem="sAO-oe-It2" secondAttribute="bottom" constant="13" id="K1e-eb-ILb"/>
+                        <constraint firstItem="6ah-Kt-aWA" firstAttribute="trailing" secondItem="iwF-h6-pef" secondAttribute="trailing" id="LK6-of-Vvy"/>
+                        <constraint firstItem="iwF-h6-pef" firstAttribute="leading" secondItem="sAO-oe-It2" secondAttribute="leading" id="Lrs-3W-U2o"/>
+                        <constraint firstItem="P5s-LD-MUO" firstAttribute="centerX" secondItem="lQW-MK-F4X" secondAttribute="centerX" id="Ocv-7F-hTa"/>
+                        <constraint firstItem="sAO-oe-It2" firstAttribute="top" secondItem="P5s-LD-MUO" secondAttribute="bottom" constant="4" id="QxU-Vy-msm"/>
+                        <constraint firstItem="sAO-oe-It2" firstAttribute="trailing" secondItem="P5s-LD-MUO" secondAttribute="trailing" id="XkE-Gc-JkY"/>
+                        <constraint firstItem="6ah-Kt-aWA" firstAttribute="top" secondItem="iwF-h6-pef" secondAttribute="bottom" constant="23" id="fQe-AD-gKh"/>
+                        <constraint firstItem="sAO-oe-It2" firstAttribute="leading" secondItem="P5s-LD-MUO" secondAttribute="leading" id="sVj-CZ-xQg"/>
+                        <constraint firstAttribute="trailing" secondItem="P5s-LD-MUO" secondAttribute="trailing" constant="20" id="wmE-11-ezL"/>
+                        <constraint firstItem="P5s-LD-MUO" firstAttribute="top" secondItem="lQW-MK-F4X" secondAttribute="top" constant="24" id="yKz-u4-8Ow"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lQW-MK-F4X" secondAttribute="trailing" id="ElV-1O-jKS"/>
+                <constraint firstItem="lQW-MK-F4X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dzS-If-6le"/>
+                <constraint firstAttribute="bottom" secondItem="lQW-MK-F4X" secondAttribute="bottom" id="ee0-Qc-qLI"/>
+                <constraint firstItem="lQW-MK-F4X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iFW-fv-5aD"/>
+            </constraints>
+            <point key="canvasLocation" x="423" y="319"/>
+        </view>
+    </objects>
+</document>

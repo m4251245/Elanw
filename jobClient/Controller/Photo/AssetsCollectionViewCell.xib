@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AssetsCollectionViewCell" id="gTV-IL-0wX" customClass="AssetsCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2fr-Aq-hYk">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9c-hK-ldY">
+                        <color key="backgroundColor" red="1" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Iw0-E6-8ND"/>
+                            <constraint firstAttribute="height" constant="20" id="Nu1-qh-cmW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="1">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2fr-Aq-hYk" secondAttribute="bottom" id="c04-GR-Ab1"/>
+                <constraint firstItem="F9c-hK-ldY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="mIv-cy-lkX"/>
+                <constraint firstItem="2fr-Aq-hYk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ue7-lE-qCp"/>
+                <constraint firstAttribute="trailing" secondItem="F9c-hK-ldY" secondAttribute="trailing" constant="5" id="vda-BX-Xmj"/>
+                <constraint firstAttribute="trailing" secondItem="2fr-Aq-hYk" secondAttribute="trailing" id="yEs-5O-vsb"/>
+                <constraint firstItem="2fr-Aq-hYk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zOu-J9-ebH"/>
+            </constraints>
+            <size key="customSize" width="75" height="75"/>
+            <connections>
+                <outlet property="countBtn" destination="F9c-hK-ldY" id="0vG-l8-sWR"/>
+                <outlet property="imageView" destination="2fr-Aq-hYk" id="9kM-1B-Plm"/>
+            </connections>
+            <point key="canvasLocation" x="-561" y="-13"/>
+        </collectionViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

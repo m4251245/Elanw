@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResumePreviewCtl">
+            <connections>
+                <outlet property="indicatorView_" destination="Os6-Xq-3uu" id="k3G-Jl-kQm"/>
+                <outlet property="statusLb_" destination="PuQ-ee-R1g" id="qeW-Di-1zC"/>
+                <outlet property="view" destination="I4p-kj-eW8" id="lkg-qo-EdL"/>
+                <outlet property="webView_" destination="acG-zj-AZj" id="JXf-M0-sNm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="I4p-kj-eW8">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <webView multipleTouchEnabled="YES" contentMode="scaleToFill" scalesPageToFit="YES" id="acG-zj-AZj">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="GUb-Lf-zSP"/>
+                    </connections>
+                </webView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" text="Status" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="PuQ-ee-R1g">
+                    <rect key="frame" x="0.0" y="548" width="320" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.44160583939999998" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" animating="YES" style="gray" id="Os6-Xq-3uu">
+                    <rect key="frame" x="150" y="198" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OwnGroupListCtl">
+            <connections>
+                <outlet property="_searchBar" destination="8vG-3s-6GN" id="gcJ-4g-Xj8"/>
+                <outlet property="tableViewTop" destination="Rqc-Xv-VJf" id="ZNr-1A-I1x"/>
+                <outlet property="tableView_" destination="O6H-4a-X0w" id="MKz-TS-m73"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="top" placeholder="输入群号、群名称或感兴趣的领域" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vG-3s-6GN">
+                    <rect key="frame" x="0.0" y="-1" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5JE-Zs-bgW"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Yzx-Hr-ZyS"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="O6H-4a-X0w">
+                    <rect key="frame" x="0.0" y="42" width="375" height="625"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="O6H-4a-X0w" secondAttribute="bottom" id="8MS-yn-I12"/>
+                <constraint firstItem="8vG-3s-6GN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-1" id="IMc-rQ-gAV"/>
+                <constraint firstItem="O6H-4a-X0w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NqM-ay-SjT"/>
+                <constraint firstItem="O6H-4a-X0w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="42" id="Rqc-Xv-VJf"/>
+                <constraint firstItem="8vG-3s-6GN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wgv-RT-Eak"/>
+                <constraint firstAttribute="trailing" secondItem="O6H-4a-X0w" secondAttribute="trailing" id="aD8-Rp-rzV"/>
+                <constraint firstAttribute="trailing" secondItem="8vG-3s-6GN" secondAttribute="trailing" id="wwh-MT-Rgo"/>
+            </constraints>
+            <point key="canvasLocation" x="-91" y="47"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

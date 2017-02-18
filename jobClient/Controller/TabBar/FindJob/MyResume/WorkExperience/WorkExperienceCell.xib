@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkExperienceCell" rowHeight="114" id="KGk-i7-Jjw" customClass="WorkExperienceCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2014年5月至今" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sj3-m0-cIO">
+                        <rect key="frame" x="10" y="10" width="275" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="jg6-Kn-0Ht"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon_salary_rightArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="on0-un-hsW">
+                        <rect key="frame" x="300" y="40" width="6" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="6AI-sx-Ivi"/>
+                            <constraint firstAttribute="height" constant="10" id="qz8-Lq-dBq"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taS-i7-pUw">
+                        <rect key="frame" x="10" y="0.0" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92941176470588238" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="nMo-J8-R3W"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="深圳市一览网络股份有限公司" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsS-bQ-uKM">
+                        <rect key="frame" x="10" y="35" width="275" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="b2O-nM-FmS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="taS-i7-pUw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="Jqi-d2-bhx"/>
+                    <constraint firstItem="on0-un-hsW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="32" id="KSh-UL-L8W"/>
+                    <constraint firstItem="YsS-bQ-uKM" firstAttribute="leading" secondItem="sj3-m0-cIO" secondAttribute="leading" id="P0j-Ev-yMO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YsS-bQ-uKM" secondAttribute="trailing" constant="27" id="YjK-EL-EVF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="on0-un-hsW" secondAttribute="trailing" constant="6" id="ZrJ-hH-E6X"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="taS-i7-pUw" secondAttribute="trailing" constant="2" id="b4d-p7-p8M"/>
+                    <constraint firstItem="taS-i7-pUw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="cGe-SF-hBm"/>
+                    <constraint firstItem="sj3-m0-cIO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="hCU-qM-rsD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sj3-m0-cIO" secondAttribute="trailing" constant="27" id="nI1-XY-nBn"/>
+                    <constraint firstItem="sj3-m0-cIO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="oTS-T4-vq7"/>
+                    <constraint firstItem="YsS-bQ-uKM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="27" id="p8a-Iu-Ead"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="companyNameLb" destination="YsS-bQ-uKM" id="g9r-C9-li9"/>
+                <outlet property="lineView" destination="taS-i7-pUw" id="hZj-qO-Pux"/>
+                <outlet property="rightImage" destination="on0-un-hsW" id="z4Q-WS-pKF"/>
+                <outlet property="timeLb" destination="sj3-m0-cIO" id="aqc-NE-Fkh"/>
+            </connections>
+            <point key="canvasLocation" x="366" y="191"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_salary_rightArrow.png" width="6" height="9"/>
+    </resources>
+</document>

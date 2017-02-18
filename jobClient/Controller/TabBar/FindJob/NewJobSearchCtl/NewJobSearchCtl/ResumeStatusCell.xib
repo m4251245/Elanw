@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ResumeStatusCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保密" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sju-BL-VVs">
+                        <rect key="frame" x="16" y="14" width="30" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hd-cO-CVJ">
+                        <rect key="frame" x="291" y="7" width="15" height="36"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal" image="rightyes.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TYb-2P-dhD">
+                        <rect key="frame" x="15" y="48" width="305" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="OWH-jg-5ge"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIE-tJ-qub">
+                        <rect key="frame" x="51" y="17" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sju-BL-VVs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="61m-y2-BKv"/>
+                    <constraint firstItem="OIE-tJ-qub" firstAttribute="leading" secondItem="sju-BL-VVs" secondAttribute="trailing" constant="5" id="HMa-OE-sLw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4hd-cO-CVJ" secondAttribute="trailing" constant="6" id="MFT-1c-4Px"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4hd-cO-CVJ" secondAttribute="bottom" constant="-2" id="Ogn-IP-LPy"/>
+                    <constraint firstItem="sju-BL-VVs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SYD-4d-a2Q"/>
+                    <constraint firstItem="TYb-2P-dhD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="XDI-fg-Yhe"/>
+                    <constraint firstAttribute="trailing" secondItem="TYb-2P-dhD" secondAttribute="trailing" id="Yx0-Jp-CNg"/>
+                    <constraint firstItem="OIE-tJ-qub" firstAttribute="centerY" secondItem="sju-BL-VVs" secondAttribute="centerY" id="b8W-E5-DxM"/>
+                    <constraint firstItem="4hd-cO-CVJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="hkA-ZD-lQD"/>
+                    <constraint firstAttribute="bottom" secondItem="TYb-2P-dhD" secondAttribute="bottom" id="lVi-dH-Kzz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="linkLb" destination="OIE-tJ-qub" id="jcc-Mx-GkE"/>
+                <outlet property="statusLb_" destination="sju-BL-VVs" id="tmB-tH-WJE"/>
+                <outlet property="statusMarkBtn_" destination="4hd-cO-CVJ" id="LDI-3G-l2K"/>
+            </connections>
+            <point key="canvasLocation" x="323" y="218"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rightyes.png" width="15" height="11"/>
+    </resources>
+</document>

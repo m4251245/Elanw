@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ELInterviewAddressCell" rowHeight="32" id="KGk-i7-Jjw" customClass="ELInterviewAddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="304" height="29"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interview_place1.png" translatesAutoresizingMaskIntoConstraints="NO" id="7pN-5R-yCW">
+                        <rect key="frame" x="8" y="8" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="96g-TH-I8v"/>
+                            <constraint firstAttribute="width" constant="15" id="g5g-mU-dL0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXN-vP-K56">
+                        <rect key="frame" x="31" y="6" width="242" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="0tB-eb-0vx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_quxiao.png" translatesAutoresizingMaskIntoConstraints="NO" id="AEe-Pc-YiD">
+                        <rect key="frame" x="275" y="5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="GPF-Rq-Fmh"/>
+                            <constraint firstAttribute="height" constant="20" id="TYe-p8-d1h"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adm-AZ-A08">
+                        <rect key="frame" x="251" y="4" width="53" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="KjK-Dm-aTp"/>
+                            <constraint firstAttribute="width" constant="53" id="h1X-2L-pvJ"/>
+                        </constraints>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gg_home_line2.png" translatesAutoresizingMaskIntoConstraints="NO" id="AXw-WG-K5r">
+                        <rect key="frame" x="8" y="29" width="288" height="1"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="7pN-5R-yCW" secondAttribute="leading" id="5oE-jJ-BUf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Adm-AZ-A08" secondAttribute="trailing" constant="-8" id="9SI-QX-lqo"/>
+                    <constraint firstItem="AEe-Pc-YiD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="Cnx-lF-hi0"/>
+                    <constraint firstItem="pXN-vP-K56" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="N9U-If-48D"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="AEe-Pc-YiD" secondAttribute="trailing" constant="1" id="ne2-ZX-eDn"/>
+                    <constraint firstItem="pXN-vP-K56" firstAttribute="trailing" secondItem="AEe-Pc-YiD" secondAttribute="leading" constant="-2" id="peO-nQ-wJe"/>
+                    <constraint firstItem="Adm-AZ-A08" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="ukF-eF-dGa"/>
+                    <constraint firstItem="pXN-vP-K56" firstAttribute="leading" secondItem="7pN-5R-yCW" secondAttribute="trailing" constant="8" id="ykH-rr-DqO"/>
+                    <constraint firstAttribute="topMargin" secondItem="7pN-5R-yCW" secondAttribute="top" id="zPE-7Q-Ul9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLb" destination="pXN-vP-K56" id="cL3-o5-XA6"/>
+                <outlet property="delectBtn" destination="Adm-AZ-A08" id="muj-Ph-gjH"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="330"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gg_home_line2.png" width="320" height="1"/>
+        <image name="icon_quxiao.png" width="30" height="30"/>
+        <image name="interview_place1.png" width="12" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyManagermentCenterCtl">
+            <connections>
+                <outlet property="collectionLayout" destination="0ar-pD-xr3" id="gda-Wk-bNy"/>
+                <outlet property="myConllection" destination="LO3-hj-VUE" id="QZr-RG-PAe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="LO3-hj-VUE">
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.92941176470588238" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="0ar-pD-xr3">
+                        <size key="itemSize" width="106" height="82"/>
+                        <size key="headerReferenceSize" width="50" height="50"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="UCd-UL-mwl"/>
+                        <outlet property="delegate" destination="-1" id="FXC-7k-lMz"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LO3-hj-VUE" secondAttribute="bottom" id="7bO-rj-0vl"/>
+                <constraint firstItem="LO3-hj-VUE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EiW-En-VzS"/>
+                <constraint firstItem="LO3-hj-VUE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IAu-Gf-nGE"/>
+                <constraint firstAttribute="trailing" secondItem="LO3-hj-VUE" secondAttribute="trailing" id="ew8-FB-DO0"/>
+            </constraints>
+            <point key="canvasLocation" x="-178" y="113"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

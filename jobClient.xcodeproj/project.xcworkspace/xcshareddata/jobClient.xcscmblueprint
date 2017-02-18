@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "f204b7f2-20aa-0410-a061-b7b33f6697ea++5224",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "f204b7f2-20aa-0410-a061-b7b33f6697ea++5224" : {
+
+    },
+    "f204b7f2-20aa-0410-a061-b7b33f6697ea++3805" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "f204b7f2-20aa-0410-a061-b7b33f6697ea++5224" : 0,
+    "f204b7f2-20aa-0410-a061-b7b33f6697ea++3805" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "15A8FE4F-718F-4733-A6D5-C760012D4EFF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "f204b7f2-20aa-0410-a061-b7b33f6697ea++5224" : "",
+    "f204b7f2-20aa-0410-a061-b7b33f6697ea++3805" : "Elanw\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "jobClient",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "jobClient.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.60.231\/iphone",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "f204b7f2-20aa-0410-a061-b7b33f6697ea++3805"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.60.231\/iphone",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "f204b7f2-20aa-0410-a061-b7b33f6697ea++5224"
+    }
+  ]
+}

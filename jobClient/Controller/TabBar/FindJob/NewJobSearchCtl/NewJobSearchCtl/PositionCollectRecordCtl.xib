@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PositionCollectRecordCtl">
+            <connections>
+                <outlet property="applayBtn_" destination="DJi-7B-wpp" id="5KG-Rg-OI4"/>
+                <outlet property="bottomView_" destination="P1Z-hg-eha" id="fU0-s9-u05"/>
+                <outlet property="tableView_" destination="hYN-cY-W1y" id="WZe-Uz-dBQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hYN-cY-W1y">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1Z-hg-eha">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="hrB-on-1oW"/>
+                    </constraints>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="ico_zw_apply.png" translatesAutoresizingMaskIntoConstraints="NO" id="NqI-6d-jA5">
+                    <rect key="frame" x="150" y="528" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="iJz-Ty-QTm"/>
+                        <constraint firstAttribute="height" constant="20" id="zzj-gf-ITw"/>
+                    </constraints>
+                </imageView>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="申请选中职位" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="nWc-tj-m0c">
+                    <rect key="frame" x="120" y="548" width="80" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="0rV-mz-RaW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJi-7B-wpp" customClass="MyButton">
+                    <rect key="frame" x="100" y="524" width="120" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="xyV-d4-gpK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="Lu7-Iy-qaT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hYN-cY-W1y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0QO-A0-yvW"/>
+                <constraint firstAttribute="trailing" secondItem="nWc-tj-m0c" secondAttribute="trailing" constant="120" id="1re-Gg-lqR"/>
+                <constraint firstItem="NqI-6d-jA5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2hO-JN-KN9"/>
+                <constraint firstAttribute="bottom" secondItem="hYN-cY-W1y" secondAttribute="bottom" id="ALv-4U-nzb"/>
+                <constraint firstItem="nWc-tj-m0c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="120" id="C2N-Sr-j9a"/>
+                <constraint firstAttribute="trailing" secondItem="P1Z-hg-eha" secondAttribute="trailing" id="DPY-Zi-ATl"/>
+                <constraint firstAttribute="trailing" secondItem="DJi-7B-wpp" secondAttribute="trailing" constant="100" id="GSD-oF-4bW"/>
+                <constraint firstAttribute="bottom" secondItem="nWc-tj-m0c" secondAttribute="bottom" id="N0Y-kt-4LO"/>
+                <constraint firstAttribute="bottom" secondItem="P1Z-hg-eha" secondAttribute="bottom" id="P9E-b1-K26"/>
+                <constraint firstAttribute="bottom" secondItem="NqI-6d-jA5" secondAttribute="bottom" constant="20" id="P9K-qa-dNo"/>
+                <constraint firstItem="P1Z-hg-eha" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YQZ-qU-diL"/>
+                <constraint firstAttribute="trailing" secondItem="hYN-cY-W1y" secondAttribute="trailing" id="bYf-pk-WPB"/>
+                <constraint firstItem="DJi-7B-wpp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="c8Z-tC-aFX"/>
+                <constraint firstAttribute="bottom" secondItem="DJi-7B-wpp" secondAttribute="bottom" id="wAJ-00-xV5"/>
+                <constraint firstItem="hYN-cY-W1y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xsM-Ls-ICg"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_zw_apply.png" width="17" height="12"/>
+    </resources>
+</document>

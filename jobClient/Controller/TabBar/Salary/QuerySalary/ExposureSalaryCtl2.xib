@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExposureSalaryCtl2">
+            <connections>
+                <outlet property="addBtn" destination="qQY-nv-v6y" id="iJj-xf-Hrw"/>
+                <outlet property="cityBtn" destination="ToL-OW-jy1" id="PeY-2L-0q8"/>
+                <outlet property="cityTF" destination="Add-hJ-Gkf" id="DOO-bL-Jwq"/>
+                <outlet property="cityView" destination="nPa-jY-I7g" id="TZu-wt-5XV"/>
+                <outlet property="commentTF" destination="E0a-eE-xEr" id="8tC-DA-3Ny"/>
+                <outlet property="commentView" destination="KjB-Vd-sy1" id="ujC-wE-z6F"/>
+                <outlet property="companyTF" destination="0Fw-RC-huw" id="TnG-5h-AfK"/>
+                <outlet property="companyview" destination="5n4-XD-vp9" id="1OA-fc-U7c"/>
+                <outlet property="contentViewHeight" destination="Is2-mc-bvi" id="N6H-EM-Viu"/>
+                <outlet property="cotentView" destination="bZi-Aa-12l" id="NSt-eZ-OTV"/>
+                <outlet property="edgeImgv" destination="xQR-Hk-Dql" id="eba-QR-fuT"/>
+                <outlet property="jobTF" destination="eTU-hB-GCo" id="oSM-zJ-Yy5"/>
+                <outlet property="jobView" destination="G8E-67-vvX" id="Xzk-C6-Y5g"/>
+                <outlet property="noNamePublishBtn" destination="4cT-bt-CcY" id="Vav-nZ-Hx6"/>
+                <outlet property="salaryTF" destination="xEa-TF-daN" id="XyL-O4-VO1"/>
+                <outlet property="salaryView" destination="ToE-6a-6kE" id="wg6-ld-IhN"/>
+                <outlet property="titleLb" destination="KbR-KL-TNm" id="DoM-pU-6ym"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFT-ee-nH4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZi-Aa-12l">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="338"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xQR-Hk-Dql">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="338"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5n4-XD-vp9">
+                            <rect key="frame" x="15" y="15" width="290" height="35"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_salary_company.png" translatesAutoresizingMaskIntoConstraints="NO" id="6qC-I6-zwX">
+                                    <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="IvZ-Vx-iZ7"/>
+                                        <constraint firstAttribute="height" constant="35" id="oXb-XH-M93"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="公司名称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Fw-RC-huw">
+                                    <rect key="frame" x="34" y="3" width="248" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="gXA-fr-Kkj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="6qC-I6-zwX" firstAttribute="leading" secondItem="5n4-XD-vp9" secondAttribute="leading" id="DTB-Tz-ARI"/>
+                                <constraint firstAttribute="trailing" secondItem="0Fw-RC-huw" secondAttribute="trailing" constant="8" id="Hlg-xu-iYq"/>
+                                <constraint firstItem="6qC-I6-zwX" firstAttribute="top" secondItem="5n4-XD-vp9" secondAttribute="top" id="L4j-nD-95J"/>
+                                <constraint firstItem="0Fw-RC-huw" firstAttribute="leading" secondItem="5n4-XD-vp9" secondAttribute="leading" constant="34" id="ODY-am-JU6"/>
+                                <constraint firstItem="0Fw-RC-huw" firstAttribute="top" secondItem="5n4-XD-vp9" secondAttribute="top" constant="3" id="X9f-4J-dgg"/>
+                                <constraint firstAttribute="height" constant="35" id="hZC-G7-MTb"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8E-67-vvX">
+                            <rect key="frame" x="15" y="65" width="290" height="35"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_salary_job.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jt7-Em-v8d">
+                                    <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="GMa-k4-Al9"/>
+                                        <constraint firstAttribute="width" constant="35" id="NA8-im-SSm"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="职位名称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eTU-hB-GCo">
+                                    <rect key="frame" x="34" y="3" width="248" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="9jS-Cc-IgT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Jt7-Em-v8d" firstAttribute="leading" secondItem="G8E-67-vvX" secondAttribute="leading" id="Dhn-GM-4GZ"/>
+                                <constraint firstAttribute="height" constant="35" id="EdJ-D3-IPN"/>
+                                <constraint firstItem="eTU-hB-GCo" firstAttribute="leading" secondItem="G8E-67-vvX" secondAttribute="leading" constant="34" id="dzG-0v-FAH"/>
+                                <constraint firstItem="eTU-hB-GCo" firstAttribute="top" secondItem="G8E-67-vvX" secondAttribute="top" constant="3" id="fN7-u1-355"/>
+                                <constraint firstAttribute="trailing" secondItem="eTU-hB-GCo" secondAttribute="trailing" constant="8" id="jcl-xM-omV"/>
+                                <constraint firstItem="Jt7-Em-v8d" firstAttribute="top" secondItem="G8E-67-vvX" secondAttribute="top" id="jhp-0M-3Ko"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ToE-6a-6kE">
+                            <rect key="frame" x="15" y="115" width="290" height="35"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_salary_money.png" translatesAutoresizingMaskIntoConstraints="NO" id="BA3-2k-o0E">
+                                    <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="aRO-DT-zbn"/>
+                                        <constraint firstAttribute="width" constant="35" id="rLK-FP-NkB"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="税前月薪" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xEa-TF-daN">
+                                    <rect key="frame" x="34" y="3" width="248" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="Bux-uq-H0O"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="xEa-TF-daN" secondAttribute="trailing" constant="8" id="1rt-DP-QcE"/>
+                                <constraint firstItem="xEa-TF-daN" firstAttribute="leading" secondItem="ToE-6a-6kE" secondAttribute="leading" constant="34" id="nqz-d8-Wyo"/>
+                                <constraint firstItem="BA3-2k-o0E" firstAttribute="leading" secondItem="ToE-6a-6kE" secondAttribute="leading" id="oQG-vp-40f"/>
+                                <constraint firstItem="xEa-TF-daN" firstAttribute="top" secondItem="ToE-6a-6kE" secondAttribute="top" constant="3" id="qbc-2k-M9c"/>
+                                <constraint firstItem="BA3-2k-o0E" firstAttribute="top" secondItem="ToE-6a-6kE" secondAttribute="top" id="uHp-fN-NH2"/>
+                                <constraint firstAttribute="height" constant="35" id="wmH-S3-dUW"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPa-jY-I7g">
+                            <rect key="frame" x="15" y="165" width="290" height="35"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_salary_locationCity.png" translatesAutoresizingMaskIntoConstraints="NO" id="lxf-Sz-I4G">
+                                    <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="o6w-tM-BKK"/>
+                                        <constraint firstAttribute="height" constant="35" id="oeb-UE-wmE"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_salary_rightArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="DW7-8I-8ry">
+                                    <rect key="frame" x="255" y="0.0" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="3ic-tG-Abe"/>
+                                        <constraint firstAttribute="width" constant="35" id="LC2-zE-MgH"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="哪个城市" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Add-hJ-Gkf">
+                                    <rect key="frame" x="34" y="3" width="198" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="HJX-AI-6dq"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ToL-OW-jy1">
+                                    <rect key="frame" x="34" y="0.0" width="256" height="35"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="e1w-1B-60N"/>
+                                    </constraints>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="pCH-7Z-PuC"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Add-hJ-Gkf" firstAttribute="top" secondItem="nPa-jY-I7g" secondAttribute="top" constant="3" id="6Qq-XD-iCI"/>
+                                <constraint firstItem="lxf-Sz-I4G" firstAttribute="leading" secondItem="nPa-jY-I7g" secondAttribute="leading" id="DbN-i9-7M6"/>
+                                <constraint firstAttribute="height" constant="35" id="LOm-D7-ZU0"/>
+                                <constraint firstItem="Add-hJ-Gkf" firstAttribute="leading" secondItem="nPa-jY-I7g" secondAttribute="leading" constant="34" id="NzB-rs-qpI"/>
+                                <constraint firstAttribute="bottom" secondItem="ToL-OW-jy1" secondAttribute="bottom" id="OER-uv-Dbn"/>
+                                <constraint firstItem="ToL-OW-jy1" firstAttribute="top" secondItem="nPa-jY-I7g" secondAttribute="top" id="ONT-Vg-NeB"/>
+                                <constraint firstItem="DW7-8I-8ry" firstAttribute="leading" secondItem="Add-hJ-Gkf" secondAttribute="trailing" constant="23" id="dcy-qP-jaL"/>
+                                <constraint firstAttribute="trailing" secondItem="DW7-8I-8ry" secondAttribute="trailing" id="dfa-XG-d5M"/>
+                                <constraint firstAttribute="trailing" secondItem="ToL-OW-jy1" secondAttribute="trailing" id="ljo-gz-932"/>
+                                <constraint firstItem="ToL-OW-jy1" firstAttribute="leading" secondItem="nPa-jY-I7g" secondAttribute="leading" constant="34" id="oJn-2l-2tg"/>
+                                <constraint firstItem="DW7-8I-8ry" firstAttribute="top" secondItem="nPa-jY-I7g" secondAttribute="top" id="rtZ-Ar-Wom"/>
+                                <constraint firstItem="lxf-Sz-I4G" firstAttribute="top" secondItem="nPa-jY-I7g" secondAttribute="top" id="yaI-vV-FFz"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用一句话形容你对这份“工资”的爱恨" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbR-KL-TNm">
+                            <rect key="frame" x="15" y="219" width="208" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="asX-xz-Sm3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KjB-Vd-sy1">
+                            <rect key="frame" x="15" y="252" width="290" height="35"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="满意or不满意？大声说" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E0a-eE-xEr">
+                                    <rect key="frame" x="8" y="3" width="282" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="bhM-5U-Pea"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="7UA-Ge-I5j"/>
+                                <constraint firstAttribute="trailing" secondItem="E0a-eE-xEr" secondAttribute="trailing" id="PbQ-JD-Mtd"/>
+                                <constraint firstItem="E0a-eE-xEr" firstAttribute="top" secondItem="KjB-Vd-sy1" secondAttribute="top" constant="3" id="TUM-hj-O1k"/>
+                                <constraint firstItem="E0a-eE-xEr" firstAttribute="leading" secondItem="KjB-Vd-sy1" secondAttribute="leading" constant="8" id="gTw-eh-mgx"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cT-bt-CcY">
+                            <rect key="frame" x="15" y="252" width="290" height="35"/>
+                            <color key="backgroundColor" red="1" green="0.90196078430000004" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="a3S-vI-Ju1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="匿名发布">
+                                <color key="titleColor" red="0.63137254899999995" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="Ggd-vw-bgx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQY-nv-v6y">
+                            <rect key="frame" x="231" y="212" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="LCM-5K-QV9"/>
+                                <constraint firstAttribute="width" constant="35" id="j6v-3w-CDX"/>
+                            </constraints>
+                            <state key="normal" image="icon_salary_add.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="4AZ-Ld-XiW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="KjB-Vd-sy1" firstAttribute="leading" secondItem="bZi-Aa-12l" secondAttribute="leading" constant="15" id="3kl-34-H1a"/>
+                        <constraint firstItem="4cT-bt-CcY" firstAttribute="leading" secondItem="bZi-Aa-12l" secondAttribute="leading" constant="15" id="7Hi-vX-1Uf"/>
+                        <constraint firstAttribute="trailing" secondItem="G8E-67-vvX" secondAttribute="trailing" constant="15" id="7Vq-dS-zsx"/>
+                        <constraint firstAttribute="trailing" secondItem="xQR-Hk-Dql" secondAttribute="trailing" id="8yA-ab-qop"/>
+                        <constraint firstAttribute="bottom" secondItem="4cT-bt-CcY" secondAttribute="bottom" constant="51" id="FPj-KE-OMK"/>
+                        <constraint firstItem="xQR-Hk-Dql" firstAttribute="top" secondItem="bZi-Aa-12l" secondAttribute="top" id="Fl9-tY-5hh"/>
+                        <constraint firstAttribute="height" constant="338" id="Is2-mc-bvi"/>
+                        <constraint firstAttribute="bottom" secondItem="xQR-Hk-Dql" secondAttribute="bottom" id="JOC-GS-wdE"/>
+                        <constraint firstAttribute="trailing" secondItem="5n4-XD-vp9" secondAttribute="trailing" constant="15" id="Jr1-9U-G89"/>
+                        <constraint firstItem="5n4-XD-vp9" firstAttribute="leading" secondItem="bZi-Aa-12l" secondAttribute="leading" constant="15" id="Lgc-Kw-ZQO"/>
+                        <constraint firstItem="ToE-6a-6kE" firstAttribute="top" secondItem="G8E-67-vvX" secondAttribute="bottom" constant="15" id="SSD-6Z-oKi"/>
+                        <constraint firstAttribute="trailing" secondItem="nPa-jY-I7g" secondAttribute="trailing" constant="15" id="Vc9-KS-q6j"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qQY-nv-v6y" secondAttribute="trailing" constant="10" id="WzJ-NL-mfX"/>
+                        <constraint firstItem="KjB-Vd-sy1" firstAttribute="top" secondItem="qQY-nv-v6y" secondAttribute="bottom" constant="5" id="Zb2-d0-XPl"/>
+                        <constraint firstItem="5n4-XD-vp9" firstAttribute="top" secondItem="bZi-Aa-12l" secondAttribute="top" constant="15" id="a4I-8U-ffN"/>
+                        <constraint firstAttribute="trailing" secondItem="ToE-6a-6kE" secondAttribute="trailing" constant="15" id="b7w-bl-ea8"/>
+                        <constraint firstItem="nPa-jY-I7g" firstAttribute="leading" secondItem="bZi-Aa-12l" secondAttribute="leading" constant="15" id="dFP-Bw-jET"/>
+                        <constraint firstItem="xQR-Hk-Dql" firstAttribute="leading" secondItem="bZi-Aa-12l" secondAttribute="leading" id="eWy-ee-rQC"/>
+                        <constraint firstItem="qQY-nv-v6y" firstAttribute="leading" secondItem="KbR-KL-TNm" secondAttribute="trailing" constant="8" id="gcz-vK-EmS"/>
+                        <constraint firstItem="KbR-KL-TNm" firstAttribute="leading" secondItem="bZi-Aa-12l" secondAttribute="leading" constant="15" id="gpC-88-o6A"/>
+                        <constraint firstItem="ToE-6a-6kE" firstAttribute="leading" secondItem="bZi-Aa-12l" secondAttribute="leading" constant="15" id="hXm-RH-h2s"/>
+                        <constraint firstItem="nPa-jY-I7g" firstAttribute="top" secondItem="ToE-6a-6kE" secondAttribute="bottom" constant="15" id="huJ-Xk-5gZ"/>
+                        <constraint firstItem="G8E-67-vvX" firstAttribute="top" secondItem="5n4-XD-vp9" secondAttribute="bottom" constant="15" id="kzp-ra-GJf"/>
+                        <constraint firstItem="qQY-nv-v6y" firstAttribute="top" secondItem="nPa-jY-I7g" secondAttribute="bottom" constant="12" id="mOG-es-26P"/>
+                        <constraint firstAttribute="trailing" secondItem="KjB-Vd-sy1" secondAttribute="trailing" constant="15" id="nPw-L0-Tdm"/>
+                        <constraint firstItem="qQY-nv-v6y" firstAttribute="leading" secondItem="KbR-KL-TNm" secondAttribute="trailing" constant="8" id="rDl-YO-V7i"/>
+                        <constraint firstAttribute="trailing" secondItem="4cT-bt-CcY" secondAttribute="trailing" constant="15" id="s8b-6i-gQf"/>
+                        <constraint firstItem="G8E-67-vvX" firstAttribute="leading" secondItem="bZi-Aa-12l" secondAttribute="leading" constant="15" id="xcs-MM-MuN"/>
+                        <constraint firstItem="KbR-KL-TNm" firstAttribute="top" secondItem="nPa-jY-I7g" secondAttribute="bottom" constant="19" id="yQT-Ud-X7O"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wFT-ee-nH4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Db-Ck-c6U"/>
+                <constraint firstItem="bZi-Aa-12l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GgP-gb-YII"/>
+                <constraint firstItem="bZi-Aa-12l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PxK-xw-4lC"/>
+                <constraint firstAttribute="trailing" secondItem="bZi-Aa-12l" secondAttribute="trailing" id="Xui-ip-gTl"/>
+                <constraint firstAttribute="trailing" secondItem="wFT-ee-nH4" secondAttribute="trailing" id="YsS-mb-4Fc"/>
+                <constraint firstAttribute="bottom" secondItem="wFT-ee-nH4" secondAttribute="bottom" id="dXb-2Z-0or"/>
+                <constraint firstItem="wFT-ee-nH4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hUr-H2-ZTL"/>
+            </constraints>
+            <point key="canvasLocation" x="420" y="308"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_salary_add.png" width="16" height="16"/>
+        <image name="icon_salary_company.png" width="16" height="16"/>
+        <image name="icon_salary_job.png" width="16" height="16"/>
+        <image name="icon_salary_locationCity.png" width="16" height="16"/>
+        <image name="icon_salary_money.png" width="16" height="16"/>
+        <image name="icon_salary_rightArrow.png" width="6" height="9"/>
+    </resources>
+</document>

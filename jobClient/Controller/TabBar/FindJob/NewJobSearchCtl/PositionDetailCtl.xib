@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PositionDetailCtl">
+            <connections>
+                <outlet property="applyBtn_" destination="fwV-9H-HII" id="wBy-mj-2bb"/>
+                <outlet property="backBtn_" destination="mmy-ow-l2o" id="Oeg-Hf-fvP"/>
+                <outlet property="bottomView_" destination="C07-Rr-o7a" id="t39-BB-wvt"/>
+                <outlet property="closeBtn_" destination="pTP-D1-pQJ" id="i9t-DB-Bis"/>
+                <outlet property="myLeftBarBtnItem_" destination="MjH-DW-fW5" id="zX5-em-JCm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webViewBttomH" destination="UCQ-Ol-DwL" id="Ojl-MH-x3n"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUD-vb-cmA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C07-Rr-o7a">
+                    <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwV-9H-HII">
+                            <rect key="frame" x="8" y="7" width="331" height="31"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <state key="normal" title="投递简历" backgroundImage="positionApplayNormal.png">
+                                <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="5zE-mS-UQM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="fwV-9H-HII" firstAttribute="top" secondItem="C07-Rr-o7a" secondAttribute="top" constant="7" id="7Kd-ds-Pgl"/>
+                        <constraint firstAttribute="trailing" secondItem="fwV-9H-HII" secondAttribute="trailing" constant="36" id="YJK-WM-GLh"/>
+                        <constraint firstAttribute="height" constant="45" id="YgB-1i-FzW"/>
+                        <constraint firstItem="fwV-9H-HII" firstAttribute="leading" secondItem="C07-Rr-o7a" secondAttribute="leading" constant="8" id="jJD-2b-5bi"/>
+                        <constraint firstAttribute="bottom" secondItem="fwV-9H-HII" secondAttribute="bottom" constant="7" id="rqM-L3-9zM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="C07-Rr-o7a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5QP-xD-ds0"/>
+                <constraint firstAttribute="bottom" secondItem="C07-Rr-o7a" secondAttribute="bottom" id="7e4-xP-Hg2"/>
+                <constraint firstAttribute="bottom" secondItem="cUD-vb-cmA" secondAttribute="bottom" constant="45" id="UCQ-Ol-DwL"/>
+                <constraint firstAttribute="trailing" secondItem="cUD-vb-cmA" secondAttribute="trailing" id="Ybh-DG-4AS"/>
+                <constraint firstItem="cUD-vb-cmA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iIe-Or-PZL"/>
+                <constraint firstItem="cUD-vb-cmA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pSO-Tm-WNr"/>
+                <constraint firstAttribute="trailing" secondItem="C07-Rr-o7a" secondAttribute="trailing" id="yu3-CS-HrZ"/>
+            </constraints>
+            <point key="canvasLocation" x="-170" y="26"/>
+        </view>
+        <view contentMode="scaleToFill" id="MjH-DW-fW5">
+            <rect key="frame" x="0.0" y="0.0" width="67" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmy-ow-l2o">
+                    <rect key="frame" x="0.0" y="0.0" width="27" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="back_white_new.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="LMt-Az-oK0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTP-D1-pQJ">
+                    <rect key="frame" x="35" y="0.0" width="30" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="关闭">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="fcf-0p-4CH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="605.5" y="320.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_white_new.png" width="22" height="22"/>
+        <image name="positionApplayNormal.png" width="191" height="31"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

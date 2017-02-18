@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyOfferPartyIndexCtl">
+            <connections>
+                <outlet property="_adImg" destination="RNd-A1-u5n" id="kyq-Ty-2aF"/>
+                <outlet property="myRightBarBtnItem_" destination="fhl-N6-ggu" id="dCh-JI-skc"/>
+                <outlet property="rightBtn" destination="TAD-f8-mme" id="AtT-Mq-OPo"/>
+                <outlet property="tableView_" destination="wow-uH-9JA" id="0cY-ga-0u7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wow-uH-9JA" customClass="ELOfferMainTable">
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="RNd-A1-u5n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="2wN-Ee-2ra"/>
+                        <outlet property="delegate" destination="-1" id="aWb-4D-czC"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wow-uH-9JA" secondAttribute="bottom" id="UIC-Zg-D5B"/>
+                <constraint firstAttribute="trailing" secondItem="wow-uH-9JA" secondAttribute="trailing" id="aLC-jX-J9n"/>
+                <constraint firstItem="wow-uH-9JA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vcu-fa-djL"/>
+                <constraint firstItem="wow-uH-9JA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zqo-Wf-nq4"/>
+            </constraints>
+            <point key="canvasLocation" x="-1700" y="-184"/>
+        </view>
+        <view contentMode="scaleToFill" id="fhl-N6-ggu">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAD-f8-mme">
+                    <frame key="frameInset" width="60" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="-14" minY="20" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="15" minY="-12" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="现场签到" image="ios_icon_smqd.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="rightBtnClick:" destination="-1" eventType="touchUpInside" id="3UR-Pg-qWj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-284" y="-223"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ios_icon_smqd.png" width="15" height="15"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

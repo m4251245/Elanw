@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoDataOkCtl">
+            <connections>
+                <outlet property="imageTopSpace" destination="5IB-8j-6Sv" id="RVM-F6-01q"/>
+                <outlet property="imageView_" destination="iuW-3Z-fhf" id="U7k-e8-iLz"/>
+                <outlet property="txtLb_" destination="p1q-TX-KvD" id="cXa-ZR-Dke"/>
+                <outlet property="view" destination="utg-Zo-xEB" id="3ME-wV-X3T"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="utg-Zo-xEB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="暂无相关信息" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="p1q-TX-KvD">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="img_noData.png" translatesAutoresizingMaskIntoConstraints="NO" id="iuW-3Z-fhf">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="179" id="WEJ-c0-sOX"/>
+                        <constraint firstAttribute="width" constant="213" id="hfq-CX-y6H"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iuW-3Z-fhf" firstAttribute="top" secondItem="utg-Zo-xEB" secondAttribute="top" constant="143" id="5IB-8j-6Sv"/>
+                <constraint firstItem="p1q-TX-KvD" firstAttribute="top" secondItem="iuW-3Z-fhf" secondAttribute="bottom" constant="14" id="UGq-tV-T9z"/>
+                <constraint firstItem="iuW-3Z-fhf" firstAttribute="centerX" secondItem="utg-Zo-xEB" secondAttribute="centerX" id="VEG-Ds-aSW"/>
+                <constraint firstItem="p1q-TX-KvD" firstAttribute="centerX" secondItem="iuW-3Z-fhf" secondAttribute="centerX" id="mpQ-io-H5r"/>
+                <constraint firstItem="p1q-TX-KvD" firstAttribute="leading" secondItem="utg-Zo-xEB" secondAttribute="leading" constant="20" id="rfm-dB-ouA"/>
+                <constraint firstAttribute="trailing" secondItem="p1q-TX-KvD" secondAttribute="trailing" constant="20" id="y3r-GQ-ERA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="128" y="116"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_noData.png" width="212" height="179"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

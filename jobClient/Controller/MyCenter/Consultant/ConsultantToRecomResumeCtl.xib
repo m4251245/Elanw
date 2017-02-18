@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConsultantToRecomResumeCtl">
+            <connections>
+                <outlet property="recomBtn" destination="qjA-TX-uOs" id="1ZY-0h-dPV"/>
+                <outlet property="tableView" destination="1lQ-1e-tlH" id="KrB-Nj-0Qx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1lQ-1e-tlH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="615"/>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MGc-IG-jbo">
+                    <rect key="frame" x="0.0" y="615" width="375" height="52"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjA-TX-uOs">
+                            <rect key="frame" x="97" y="12" width="180" height="29"/>
+                            <color key="backgroundColor" red="0.88627450980392153" green="0.24313725490196078" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="推荐简历">
+                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnResponse:" destination="-1" eventType="touchUpInside" id="jyP-Z6-DXi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qjA-TX-uOs" secondAttribute="trailing" constant="98" id="Sqa-75-7KX"/>
+                        <constraint firstItem="qjA-TX-uOs" firstAttribute="leading" secondItem="MGc-IG-jbo" secondAttribute="leading" constant="97" id="ngh-i3-fub"/>
+                        <constraint firstItem="qjA-TX-uOs" firstAttribute="centerY" secondItem="MGc-IG-jbo" secondAttribute="centerY" id="wxy-RX-Y25"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1lQ-1e-tlH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EfM-Ws-7gZ"/>
+                <constraint firstItem="MGc-IG-jbo" firstAttribute="top" secondItem="1lQ-1e-tlH" secondAttribute="bottom" id="Evh-Wy-Vqg"/>
+                <constraint firstItem="1lQ-1e-tlH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QDl-rb-TDt"/>
+                <constraint firstItem="MGc-IG-jbo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eVz-mK-gcM"/>
+                <constraint firstAttribute="trailing" secondItem="1lQ-1e-tlH" secondAttribute="trailing" id="kaD-s9-8Wy"/>
+                <constraint firstAttribute="bottom" secondItem="1lQ-1e-tlH" secondAttribute="bottom" constant="52" id="ny7-XK-cPc"/>
+                <constraint firstAttribute="bottom" secondItem="MGc-IG-jbo" secondAttribute="bottom" id="rEF-uD-JVB"/>
+                <constraint firstAttribute="trailing" secondItem="MGc-IG-jbo" secondAttribute="trailing" id="zbd-ul-YK1"/>
+            </constraints>
+            <point key="canvasLocation" x="-67.5" y="79.5"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

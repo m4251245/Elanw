@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ELResumeTradeChangeCtl">
+            <connections>
+                <outlet property="tableViewOne" destination="SQG-SV-DnI" id="Ocd-aA-JyO"/>
+                <outlet property="tableView_" destination="fMH-gk-spd" id="ShZ-Ym-0qJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fMH-gk-spd">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="OZY-sH-kRF"/>
+                        <outlet property="delegate" destination="-1" id="ncQ-Gt-SV9"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SQG-SV-DnI">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fB5-NX-b1j"/>
+                        <outlet property="delegate" destination="-1" id="0Wl-mp-omU"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SQG-SV-DnI" secondAttribute="trailing" id="CdZ-fk-WIt"/>
+                <constraint firstItem="SQG-SV-DnI" firstAttribute="width" secondItem="fMH-gk-spd" secondAttribute="width" id="HG8-AT-9Wm"/>
+                <constraint firstAttribute="bottom" secondItem="SQG-SV-DnI" secondAttribute="bottom" id="Iov-ML-vD1"/>
+                <constraint firstItem="fMH-gk-spd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U0l-9A-iUR"/>
+                <constraint firstItem="fMH-gk-spd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZcV-Gb-hIT"/>
+                <constraint firstAttribute="bottom" secondItem="fMH-gk-spd" secondAttribute="bottom" id="jLH-qN-lEX"/>
+                <constraint firstItem="SQG-SV-DnI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mCr-7R-hw5"/>
+                <constraint firstItem="SQG-SV-DnI" firstAttribute="leading" secondItem="fMH-gk-spd" secondAttribute="trailing" id="z9W-jx-1Dx"/>
+            </constraints>
+            <point key="canvasLocation" x="-265" y="38"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

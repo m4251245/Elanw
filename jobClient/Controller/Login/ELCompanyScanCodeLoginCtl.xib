@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ELCompanyScanCodeLoginCtl">
+            <connections>
+                <outlet property="backBtn_" destination="UVB-XS-vO9" id="MPW-ed-9Wl"/>
+                <outlet property="closeBtn_" destination="bcA-6l-HiY" id="bg3-77-8fB"/>
+                <outlet property="myLeftBarBtnItem_" destination="X3G-SR-vbh" id="6M6-EL-IMi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView_" destination="xyU-yM-F0q" id="mTi-fu-Pb7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyU-yM-F0q">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="tXN-fa-MVs"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xyU-yM-F0q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="INp-53-Tmk"/>
+                <constraint firstAttribute="trailing" secondItem="xyU-yM-F0q" secondAttribute="trailing" id="PJQ-Jy-Sw7"/>
+                <constraint firstAttribute="bottom" secondItem="xyU-yM-F0q" secondAttribute="bottom" id="Sin-FL-N6U"/>
+                <constraint firstItem="xyU-yM-F0q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cjz-PI-vtN"/>
+            </constraints>
+            <point key="canvasLocation" x="261" y="400"/>
+        </view>
+        <view contentMode="scaleToFill" id="X3G-SR-vbh">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVB-XS-vO9">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                    <state key="normal" image="back_white_new.png"/>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="RXZ-WH-pme"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcA-6l-HiY">
+                    <rect key="frame" x="50" y="0.0" width="50" height="44"/>
+                    <state key="normal" title="关闭">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="4ha-8s-mEJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="523" y="138"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_white_new.png" width="22" height="22"/>
+    </resources>
+</document>

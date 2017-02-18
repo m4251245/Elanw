@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ELEvaluationResumeCtl">
+            <connections>
+                <outlet property="_commentTV" destination="OYw-wm-S7i" id="1ls-5G-DO6"/>
+                <outlet property="_submitBtn" destination="xzx-b3-Urs" id="NYa-od-mRq"/>
+                <outlet property="tableView" destination="2Ja-Rb-7Kc" id="Rbh-PD-iqu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Ja-Rb-7Kc">
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="Ge4-X2-wav">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="205"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HW8-os-W2j">
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OYw-wm-S7i" customClass="GCPlaceholderTextView">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="-1" id="CXM-VY-qM2"/>
+                                        </connections>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95075207948684692" green="0.95072358846664429" blue="0.95073974132537842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="OYw-wm-S7i" secondAttribute="bottom" constant="10" id="0hz-fM-nGI"/>
+                                    <constraint firstItem="OYw-wm-S7i" firstAttribute="leading" secondItem="HW8-os-W2j" secondAttribute="leading" constant="10" id="CJe-XH-SJx"/>
+                                    <constraint firstAttribute="height" constant="130" id="JdM-vE-r8q"/>
+                                    <constraint firstItem="OYw-wm-S7i" firstAttribute="top" secondItem="HW8-os-W2j" secondAttribute="top" constant="10" id="hvQ-63-i23"/>
+                                    <constraint firstAttribute="trailing" secondItem="OYw-wm-S7i" secondAttribute="trailing" constant="10" id="zmD-bL-LQ9"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzx-b3-Urs">
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3ZS-zF-zhU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="提交评价">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnResponse:" destination="-1" eventType="touchUpInside" id="5TB-Fa-fOR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HW8-os-W2j" secondAttribute="trailing" id="66F-y9-jcC"/>
+                            <constraint firstItem="HW8-os-W2j" firstAttribute="top" secondItem="Ge4-X2-wav" secondAttribute="top" id="SFb-mX-GZV"/>
+                            <constraint firstItem="HW8-os-W2j" firstAttribute="leading" secondItem="Ge4-X2-wav" secondAttribute="leading" id="b0m-cn-MNU"/>
+                            <constraint firstAttribute="trailing" secondItem="xzx-b3-Urs" secondAttribute="trailing" constant="25" id="dfx-5G-QyL"/>
+                            <constraint firstItem="xzx-b3-Urs" firstAttribute="top" secondItem="HW8-os-W2j" secondAttribute="bottom" constant="20" id="mKn-VO-l6J"/>
+                            <constraint firstItem="xzx-b3-Urs" firstAttribute="leading" secondItem="Ge4-X2-wav" secondAttribute="leading" constant="25" id="pJ4-Vs-vdF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cOJ-JY-cnH"/>
+                        <outlet property="delegate" destination="-1" id="jIk-eh-dS5"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2Ja-Rb-7Kc" secondAttribute="bottom" id="Rh6-4G-fmP"/>
+                <constraint firstItem="2Ja-Rb-7Kc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aSP-AZ-6ot"/>
+                <constraint firstAttribute="trailing" secondItem="2Ja-Rb-7Kc" secondAttribute="trailing" id="rfM-An-cbb"/>
+                <constraint firstItem="2Ja-Rb-7Kc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="w1o-he-Qcd"/>
+            </constraints>
+            <point key="canvasLocation" x="-174" y="81"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

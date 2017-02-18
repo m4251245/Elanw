@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyDelegateCtl">
+            <connections>
+                <outlet property="actionBtn" destination="yyv-Ts-3tk" id="IwJ-ro-9ia"/>
+                <outlet property="line1Lb" destination="VtW-nq-lbS" id="GZp-06-PDd"/>
+                <outlet property="line2Lb" destination="wJ5-wo-p8a" id="fus-02-m5K"/>
+                <outlet property="noDataView" destination="0Xv-TT-7Ax" id="r1z-zA-ZKD"/>
+                <outlet property="tableView" destination="eSU-8w-jjt" id="hJg-Br-MHB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eSU-8w-jjt">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="5zI-Wo-2x0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c9g-eJ-oZA">
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Ixb-B9-CxM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;&lt; 向左滑动可取消委托" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rem-KA-F0d">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c9g-eJ-oZA" firstAttribute="top" secondItem="rem-KA-F0d" secondAttribute="bottom" constant="-1" id="95M-vw-ji9"/>
+                            <constraint firstAttribute="bottom" secondItem="rem-KA-F0d" secondAttribute="bottom" id="C6l-wH-yT3"/>
+                            <constraint firstAttribute="trailing" secondItem="c9g-eJ-oZA" secondAttribute="trailing" id="Jh2-5Q-x7w"/>
+                            <constraint firstItem="rem-KA-F0d" firstAttribute="leading" secondItem="5zI-Wo-2x0" secondAttribute="leading" id="Vnm-Vz-uPE"/>
+                            <constraint firstItem="rem-KA-F0d" firstAttribute="top" secondItem="5zI-Wo-2x0" secondAttribute="top" id="mIK-Io-5Ia"/>
+                            <constraint firstAttribute="trailing" secondItem="rem-KA-F0d" secondAttribute="trailing" id="tOA-VE-mLK"/>
+                            <constraint firstItem="c9g-eJ-oZA" firstAttribute="leading" secondItem="5zI-Wo-2x0" secondAttribute="leading" id="woW-C9-DdT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="s6O-TN-rMp"/>
+                        <outlet property="delegate" destination="-1" id="HE3-MW-u90"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eSU-8w-jjt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3LD-Jt-Xbi"/>
+                <constraint firstAttribute="bottom" secondItem="eSU-8w-jjt" secondAttribute="bottom" id="Vwp-yq-Ry4"/>
+                <constraint firstItem="eSU-8w-jjt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ang-co-V7b"/>
+                <constraint firstAttribute="trailing" secondItem="eSU-8w-jjt" secondAttribute="trailing" id="gfa-pN-xVU"/>
+            </constraints>
+            <point key="canvasLocation" x="283" y="310"/>
+        </view>
+        <view contentMode="scaleToFill" id="0Xv-TT-7Ax">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还没有委托的职业经纪人！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VtW-nq-lbS">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="jBf-7e-Zhp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你与梦想只有一位经纪人的距离" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJ5-wo-p8a">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="fTF-q8-w57"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyv-Ts-3tk">
+                    <color key="backgroundColor" red="1" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Enb-rX-pg1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="去选择我的专属职业经纪人"/>
+                    <connections>
+                        <action selector="btnResponse:" destination="-1" eventType="touchUpInside" id="lvJ-Rg-L4e"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_myInterview_noData.png" translatesAutoresizingMaskIntoConstraints="NO" id="b3o-e7-zWT">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="179" id="Wen-BJ-vrf"/>
+                        <constraint firstAttribute="width" constant="213" id="cW6-zu-n6J"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wJ5-wo-p8a" secondAttribute="trailing" id="22A-Lp-dC5"/>
+                <constraint firstAttribute="trailing" secondItem="yyv-Ts-3tk" secondAttribute="trailing" constant="45" id="8xv-dm-NwG"/>
+                <constraint firstItem="VtW-nq-lbS" firstAttribute="top" secondItem="b3o-e7-zWT" secondAttribute="bottom" constant="10" id="F71-uj-8gz"/>
+                <constraint firstItem="VtW-nq-lbS" firstAttribute="leading" secondItem="0Xv-TT-7Ax" secondAttribute="leading" id="Qwu-8k-Hhb"/>
+                <constraint firstItem="yyv-Ts-3tk" firstAttribute="leading" secondItem="0Xv-TT-7Ax" secondAttribute="leading" constant="46" id="UDG-nw-4HN"/>
+                <constraint firstAttribute="trailing" secondItem="VtW-nq-lbS" secondAttribute="trailing" id="Wxd-6g-Zwo"/>
+                <constraint firstItem="b3o-e7-zWT" firstAttribute="centerX" secondItem="0Xv-TT-7Ax" secondAttribute="centerX" id="ZrB-fg-BhE"/>
+                <constraint firstItem="wJ5-wo-p8a" firstAttribute="leading" secondItem="0Xv-TT-7Ax" secondAttribute="leading" id="fSx-2u-auC"/>
+                <constraint firstItem="b3o-e7-zWT" firstAttribute="top" secondItem="0Xv-TT-7Ax" secondAttribute="top" constant="74" id="g0t-W3-lmh"/>
+                <constraint firstItem="yyv-Ts-3tk" firstAttribute="top" secondItem="wJ5-wo-p8a" secondAttribute="bottom" constant="20" id="i50-tI-UQa"/>
+                <constraint firstItem="wJ5-wo-p8a" firstAttribute="top" secondItem="b3o-e7-zWT" secondAttribute="bottom" constant="32" id="r0I-RX-O3x"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="645" y="310"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_myInterview_noData.png" width="212" height="179"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

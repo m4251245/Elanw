@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ELOfferGuidanceCtl">
+            <connections>
+                <outlet property="_maskView" destination="KgB-ux-xKK" id="I3P-Ph-hT6"/>
+                <outlet property="_tipImg" destination="xKu-K5-g5E" id="iCk-2Q-zad"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KgB-ux-xKK">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="offerpai_qiandao_yindao.png" translatesAutoresizingMaskIntoConstraints="NO" id="xKu-K5-g5E">
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="275" id="JxX-Xn-FMv"/>
+                        <constraint firstAttribute="height" constant="285" id="yWW-20-lh0"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="xKu-K5-g5E" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3tb-lj-ecL"/>
+                <constraint firstItem="KgB-ux-xKK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MNG-CB-l3I"/>
+                <constraint firstAttribute="bottom" secondItem="KgB-ux-xKK" secondAttribute="bottom" id="SyL-LH-GEi"/>
+                <constraint firstItem="xKu-K5-g5E" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="cSW-MG-N56"/>
+                <constraint firstAttribute="trailing" secondItem="KgB-ux-xKK" secondAttribute="trailing" id="dPU-er-Qkf"/>
+                <constraint firstItem="KgB-ux-xKK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yja-Os-tnL"/>
+            </constraints>
+            <point key="canvasLocation" x="-116" y="213"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="offerpai_qiandao_yindao.png" width="275" height="285"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

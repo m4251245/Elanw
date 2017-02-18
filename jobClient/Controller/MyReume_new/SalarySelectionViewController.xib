@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SalarySelectionViewController">
+            <connections>
+                <outlet property="conTable" destination="wVS-r5-qxk" id="rbm-TA-glP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wVS-r5-qxk">
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="uW0-CU-19O"/>
+                        <outlet property="delegate" destination="-1" id="Dsg-Sa-bKS"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wVS-r5-qxk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Be-6h-mD4"/>
+                <constraint firstAttribute="bottom" secondItem="wVS-r5-qxk" secondAttribute="bottom" id="E8L-X6-D7d"/>
+                <constraint firstItem="wVS-r5-qxk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NPc-j8-lUA"/>
+                <constraint firstAttribute="trailing" secondItem="wVS-r5-qxk" secondAttribute="trailing" id="f1A-Jt-IYJ"/>
+            </constraints>
+            <point key="canvasLocation" x="-113" y="39"/>
+        </view>
+    </objects>
+</document>

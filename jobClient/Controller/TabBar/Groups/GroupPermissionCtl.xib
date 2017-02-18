@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupPermissionCtl">
+            <connections>
+                <outlet property="allInviteBtn_" destination="an1-kM-YuJ" id="yYI-8S-ldo"/>
+                <outlet property="allJoinBtn_" destination="hyd-km-Qki" id="yao-tI-Pvv"/>
+                <outlet property="allPublishBtn_" destination="Dev-jc-1b6" id="cfa-IM-Kbi"/>
+                <outlet property="inviteJoinBtn_" destination="ZJZ-7G-Fzv" id="AyJ-o2-ucO"/>
+                <outlet property="meInviteBtn_" destination="npH-Us-daT" id="twg-8a-PhR"/>
+                <outlet property="mePublishBtn_" destination="aqz-TS-eYD" id="Wpe-j3-8Fe"/>
+                <outlet property="requestJoinBtn_" destination="Heo-ZA-oud" id="4wy-eO-20P"/>
+                <outlet property="someInviteBtn_" destination="ts0-WN-JaS" id="EE3-kB-gml"/>
+                <outlet property="somePublishBtn_" destination="foe-fG-Nl7" id="S6N-fa-feo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*加群验证" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sff-1L-vmH">
+                    <rect key="frame" x="8" y="8" width="71" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="71" id="Mzm-MW-SOY"/>
+                        <constraint firstAttribute="height" constant="21" id="Wgi-eH-X9q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QjF-ql-ILG">
+                    <rect key="frame" x="8" y="31" width="304" height="93"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyd-km-Qki">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="414" id="1aH-tz-cuC"/>
+                                <constraint firstAttribute="height" constant="30" id="iVP-Yx-5wI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="240" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="260" maxY="0.0"/>
+                            <state key="normal" title="允许所有人加入" image="checkbox_no.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" title="允许所有人加入" image="checkbos_yes.png"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="rUX-43-d3r"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sn-9x-iMp">
+                            <rect key="frame" x="10" y="31" width="294" height="1"/>
+                            <color key="backgroundColor" red="0.90588235289999997" green="0.91764705879999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="x7a-ty-vLr"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwF-Qb-tz2">
+                            <rect key="frame" x="10" y="62" width="294" height="1"/>
+                            <color key="backgroundColor" red="0.90588235289999997" green="0.91764705879999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="bbk-lI-meD"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Heo-ZA-oud">
+                            <rect key="frame" x="0.0" y="33" width="414" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="W3A-ae-NGS"/>
+                                <constraint firstAttribute="width" constant="414" id="hPn-wu-apM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="290" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="310" maxY="0.0"/>
+                            <state key="normal" title="申请加入" image="checkbox_no.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" title="申请加入" image="checkbos_yes.png"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="UDk-Z2-6t0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJZ-7G-Fzv">
+                            <rect key="frame" x="0.0" y="63" width="414" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="ZrL-oR-as3"/>
+                                <constraint firstAttribute="width" constant="414" id="toi-tM-Vsa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="290" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="310" maxY="0.0"/>
+                            <state key="normal" title="受邀加入" image="checkbox_no.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" title="受邀加入" image="checkbos_yes.png"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="53l-1n-DZb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="UwF-Qb-tz2" secondAttribute="trailing" id="0Vn-HG-vIX"/>
+                        <constraint firstItem="1sn-9x-iMp" firstAttribute="top" secondItem="hyd-km-Qki" secondAttribute="bottom" constant="1" id="7PD-DR-Iwf"/>
+                        <constraint firstItem="ZJZ-7G-Fzv" firstAttribute="leading" secondItem="QjF-ql-ILG" secondAttribute="leading" id="8pi-pq-M5d"/>
+                        <constraint firstItem="ZJZ-7G-Fzv" firstAttribute="top" secondItem="Heo-ZA-oud" secondAttribute="bottom" id="ACN-CS-oEj"/>
+                        <constraint firstItem="1sn-9x-iMp" firstAttribute="leading" secondItem="QjF-ql-ILG" secondAttribute="leading" constant="10" id="HcG-Ih-pJc"/>
+                        <constraint firstItem="UwF-Qb-tz2" firstAttribute="leading" secondItem="QjF-ql-ILG" secondAttribute="leading" constant="10" id="KgF-Tk-VTS"/>
+                        <constraint firstAttribute="trailing" secondItem="1sn-9x-iMp" secondAttribute="trailing" id="cfb-aC-yol"/>
+                        <constraint firstItem="Heo-ZA-oud" firstAttribute="top" secondItem="1sn-9x-iMp" secondAttribute="bottom" constant="1" id="eko-Mc-0Jz"/>
+                        <constraint firstItem="hyd-km-Qki" firstAttribute="top" secondItem="QjF-ql-ILG" secondAttribute="top" id="gID-au-3kZ"/>
+                        <constraint firstItem="hyd-km-Qki" firstAttribute="leading" secondItem="QjF-ql-ILG" secondAttribute="leading" id="mod-u4-zlI"/>
+                        <constraint firstItem="Heo-ZA-oud" firstAttribute="leading" secondItem="QjF-ql-ILG" secondAttribute="leading" id="oi1-go-pR2"/>
+                        <constraint firstAttribute="height" constant="93" id="s5n-04-rzP"/>
+                        <constraint firstItem="UwF-Qb-tz2" firstAttribute="top" secondItem="1sn-9x-iMp" secondAttribute="bottom" constant="30" id="zD7-0n-bCh"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*话题发表" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tt-JA-Xy8">
+                    <rect key="frame" x="8" y="132" width="71" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="73A-YL-VLw"/>
+                        <constraint firstAttribute="width" constant="71" id="A0v-Ku-PKq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7HS-gk-zMU">
+                    <rect key="frame" x="8" y="155" width="304" height="93"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LzX-Ad-SEg">
+                            <rect key="frame" x="10" y="31" width="294" height="1"/>
+                            <color key="backgroundColor" red="0.90588235289999997" green="0.91764705879999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="g6l-FP-b1K"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jmt-Po-2cY">
+                            <rect key="frame" x="10" y="62" width="294" height="1"/>
+                            <color key="backgroundColor" red="0.90588235289999997" green="0.91764705879999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="8KN-Jf-qfZ"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqz-TS-eYD">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Wwv-2L-ar9"/>
+                                <constraint firstAttribute="width" constant="414" id="fP1-5c-ot9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="274" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="290" maxY="0.0"/>
+                            <state key="normal" title="仅自己发表" image="checkbox_no.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" title="仅自己发表" image="checkbos_yes.png"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="WbI-PV-NHk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foe-fG-Nl7">
+                            <rect key="frame" x="0.0" y="32" width="414" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="414" id="ekR-BJ-BCv"/>
+                                <constraint firstAttribute="height" constant="30" id="pad-rf-IfQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="180" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="195" maxY="0.0"/>
+                            <state key="normal" title="授权本群特定成员可发表" image="checkbox_no.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" title="授权本群特定成员可发表" image="checkbos_yes.png"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="9k6-eb-Swr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dev-jc-1b6">
+                            <rect key="frame" x="0.0" y="63" width="414" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="414" id="XPl-UT-Cdo"/>
+                                <constraint firstAttribute="height" constant="30" id="iaQ-dW-sl2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="245" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="260" maxY="0.0"/>
+                            <state key="normal" title="所有成员可发表" image="checkbox_no.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" title="所有成员可发表" image="checkbos_yes.png"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="fxN-M9-3LZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LzX-Ad-SEg" secondAttribute="trailing" id="5e0-vw-LcI"/>
+                        <constraint firstItem="Jmt-Po-2cY" firstAttribute="top" secondItem="foe-fG-Nl7" secondAttribute="bottom" id="G2v-ej-Zj1"/>
+                        <constraint firstItem="Dev-jc-1b6" firstAttribute="leading" secondItem="7HS-gk-zMU" secondAttribute="leading" id="HHQ-Wc-ugT"/>
+                        <constraint firstItem="aqz-TS-eYD" firstAttribute="leading" secondItem="7HS-gk-zMU" secondAttribute="leading" id="IGJ-8U-7aX"/>
+                        <constraint firstAttribute="height" constant="93" id="LF6-3i-emk"/>
+                        <constraint firstItem="LzX-Ad-SEg" firstAttribute="top" secondItem="aqz-TS-eYD" secondAttribute="bottom" constant="1" id="N1b-94-xS7"/>
+                        <constraint firstItem="foe-fG-Nl7" firstAttribute="top" secondItem="LzX-Ad-SEg" secondAttribute="bottom" id="Pek-mD-tY1"/>
+                        <constraint firstItem="foe-fG-Nl7" firstAttribute="leading" secondItem="7HS-gk-zMU" secondAttribute="leading" id="WTA-Ag-0tU"/>
+                        <constraint firstItem="aqz-TS-eYD" firstAttribute="top" secondItem="7HS-gk-zMU" secondAttribute="top" id="i98-e8-hKm"/>
+                        <constraint firstItem="LzX-Ad-SEg" firstAttribute="leading" secondItem="7HS-gk-zMU" secondAttribute="leading" constant="10" id="l9H-Ci-fWQ"/>
+                        <constraint firstItem="Dev-jc-1b6" firstAttribute="top" secondItem="Jmt-Po-2cY" secondAttribute="bottom" id="ley-VE-LqZ"/>
+                        <constraint firstAttribute="trailing" secondItem="Jmt-Po-2cY" secondAttribute="trailing" id="xkH-CV-8Fm"/>
+                        <constraint firstItem="Jmt-Po-2cY" firstAttribute="leading" secondItem="7HS-gk-zMU" secondAttribute="leading" constant="10" id="yOX-Og-PG5"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*成员邀请" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHa-cP-2It">
+                    <rect key="frame" x="8" y="256" width="71" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="71" id="O6Z-O5-UH2"/>
+                        <constraint firstAttribute="height" constant="21" id="vgO-VJ-PFp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkS-zW-PW8">
+                    <rect key="frame" x="8" y="279" width="304" height="93"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eT-N0-ryt">
+                            <rect key="frame" x="10" y="31" width="294" height="1"/>
+                            <color key="backgroundColor" red="0.90588235289999997" green="0.91764705879999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="AkX-nr-Jmb"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npH-Us-daT">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="3dg-KB-II4"/>
+                                <constraint firstAttribute="width" constant="414" id="Y40-Cp-pRu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="260" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="275" maxY="0.0"/>
+                            <state key="normal" title="仅自己可邀请" image="checkbox_no.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" title="仅自己可邀请" image="checkbos_yes.png"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="8vt-tw-5Ze"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ts0-WN-JaS">
+                            <rect key="frame" x="0.0" y="32" width="414" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="AsN-uR-a8a"/>
+                                <constraint firstAttribute="width" constant="414" id="ndF-Iu-5Tw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="180" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="195" maxY="0.0"/>
+                            <state key="normal" title="授权本群特定成员可邀请" image="checkbox_no.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" title="授权本群特定成员可邀请" image="checkbos_yes.png"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="jXP-ij-PBf"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPG-B8-Xyw">
+                            <rect key="frame" x="5" y="62" width="299" height="1"/>
+                            <color key="backgroundColor" red="0.90588235289999997" green="0.91764705879999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="BOn-tL-EgS"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="an1-kM-YuJ">
+                            <rect key="frame" x="0.0" y="63" width="414" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="414" id="B1S-IG-kIv"/>
+                                <constraint firstAttribute="height" constant="30" id="mpA-Jv-DrW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="245" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="258" maxY="0.0"/>
+                            <state key="normal" title="所有成员可邀请" image="checkbox_no.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" title="所有成员可邀请" image="checkbos_yes.png"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="OVl-38-bL9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="93" id="4C5-CT-UIH"/>
+                        <constraint firstItem="npH-Us-daT" firstAttribute="leading" secondItem="mkS-zW-PW8" secondAttribute="leading" id="5hy-ob-RvC"/>
+                        <constraint firstItem="an1-kM-YuJ" firstAttribute="leading" secondItem="mkS-zW-PW8" secondAttribute="leading" id="F8J-pv-VsK"/>
+                        <constraint firstItem="6eT-N0-ryt" firstAttribute="top" secondItem="npH-Us-daT" secondAttribute="bottom" constant="1" id="P61-df-WRw"/>
+                        <constraint firstItem="an1-kM-YuJ" firstAttribute="top" secondItem="hPG-B8-Xyw" secondAttribute="bottom" id="Qfl-Uh-EV7"/>
+                        <constraint firstAttribute="trailing" secondItem="hPG-B8-Xyw" secondAttribute="trailing" id="TMe-td-MYh"/>
+                        <constraint firstItem="hPG-B8-Xyw" firstAttribute="top" secondItem="ts0-WN-JaS" secondAttribute="bottom" id="Xdt-7m-5ig"/>
+                        <constraint firstItem="ts0-WN-JaS" firstAttribute="leading" secondItem="mkS-zW-PW8" secondAttribute="leading" id="aPm-tU-Niv"/>
+                        <constraint firstAttribute="trailing" secondItem="6eT-N0-ryt" secondAttribute="trailing" id="bQU-Ba-Kle"/>
+                        <constraint firstItem="6eT-N0-ryt" firstAttribute="leading" secondItem="mkS-zW-PW8" secondAttribute="leading" constant="10" id="ptb-oN-k2a"/>
+                        <constraint firstItem="hPG-B8-Xyw" firstAttribute="leading" secondItem="mkS-zW-PW8" secondAttribute="leading" constant="5" id="tcr-tt-TEw"/>
+                        <constraint firstItem="ts0-WN-JaS" firstAttribute="top" secondItem="6eT-N0-ryt" secondAttribute="bottom" id="tq4-IW-mNx"/>
+                        <constraint firstItem="npH-Us-daT" firstAttribute="top" secondItem="mkS-zW-PW8" secondAttribute="top" id="xbt-hz-ZxM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="7HS-gk-zMU" firstAttribute="top" secondItem="5Tt-JA-Xy8" secondAttribute="bottom" constant="2" id="2gS-kH-TqA"/>
+                <constraint firstItem="sff-1L-vmH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="367-Wd-UJD"/>
+                <constraint firstItem="hHa-cP-2It" firstAttribute="top" secondItem="7HS-gk-zMU" secondAttribute="bottom" constant="8" id="7pd-o5-rme"/>
+                <constraint firstItem="5Tt-JA-Xy8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="RcG-6V-a40"/>
+                <constraint firstItem="QjF-ql-ILG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="TOV-gf-Hxz"/>
+                <constraint firstItem="QjF-ql-ILG" firstAttribute="top" secondItem="sff-1L-vmH" secondAttribute="bottom" constant="2" id="XFm-ho-wcT"/>
+                <constraint firstAttribute="trailing" secondItem="7HS-gk-zMU" secondAttribute="trailing" constant="8" id="XS8-IW-gx4"/>
+                <constraint firstItem="mkS-zW-PW8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="XTe-vG-Sey"/>
+                <constraint firstItem="hHa-cP-2It" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="YSy-ne-RIJ"/>
+                <constraint firstAttribute="trailing" secondItem="QjF-ql-ILG" secondAttribute="trailing" constant="8" id="c7R-Ai-Ig1"/>
+                <constraint firstItem="7HS-gk-zMU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="cqL-na-AtA"/>
+                <constraint firstItem="mkS-zW-PW8" firstAttribute="top" secondItem="hHa-cP-2It" secondAttribute="bottom" constant="2" id="jur-sP-dnM"/>
+                <constraint firstAttribute="trailing" secondItem="mkS-zW-PW8" secondAttribute="trailing" constant="8" id="pX9-7I-zLF"/>
+                <constraint firstItem="sff-1L-vmH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="pYd-Bw-4BY"/>
+                <constraint firstItem="5Tt-JA-Xy8" firstAttribute="top" secondItem="QjF-ql-ILG" secondAttribute="bottom" constant="8" id="uCr-fk-XTl"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkbos_yes.png" width="23" height="22"/>
+        <image name="checkbox_no.png" width="21" height="21"/>
+    </resources>
+</document>

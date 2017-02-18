@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CareerTailDetailCell" rowHeight="164" id="KGk-i7-Jjw" customClass="CareerTailDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温馨提示" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHJ-WC-Rkb">
+                        <rect key="frame" x="10" y="8" width="300" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Tz1-cm-Jn5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VU0-HZ-mCO">
+                        <rect key="frame" x="10" y="33" width="303" height="125"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="125" id="nee-Ee-WZ5"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="sgq-5N-Dxg"/>
+                        </connections>
+                    </webView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="EHJ-WC-Rkb" secondAttribute="trailing" constant="3" id="ElF-xQ-Snv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VU0-HZ-mCO" secondAttribute="trailing" id="OyN-Mc-Vlr"/>
+                    <constraint firstAttribute="topMargin" secondItem="EHJ-WC-Rkb" secondAttribute="top" id="Xco-IQ-5NJ"/>
+                    <constraint firstItem="VU0-HZ-mCO" firstAttribute="top" secondItem="EHJ-WC-Rkb" secondAttribute="bottom" constant="5" id="hvY-Nf-9u5"/>
+                    <constraint firstItem="VU0-HZ-mCO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="nYL-0b-fbu"/>
+                    <constraint firstItem="EHJ-WC-Rkb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="ohp-IA-sJU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="tipsTitle_" destination="EHJ-WC-Rkb" id="h8W-q5-JQL"/>
+                <outlet property="webHeight" destination="nee-Ee-WZ5" id="K1i-N3-II5"/>
+                <outlet property="webView_" destination="VU0-HZ-mCO" id="a48-jS-oE7"/>
+            </connections>
+            <point key="canvasLocation" x="265.5" y="158.5"/>
+        </tableViewCell>
+    </objects>
+</document>

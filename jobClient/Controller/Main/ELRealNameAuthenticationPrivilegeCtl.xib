@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ELRealNameAuthenticationPrivilegeCtl">
+            <connections>
+                <outlet property="_applyBtn" destination="n2G-6R-NUi" id="jUy-Lz-qOo"/>
+                <outlet property="_authenImg" destination="JVP-h9-q4Q" id="Z53-d2-KFF"/>
+                <outlet property="_authenResultLb" destination="bjK-Rp-WxW" id="tOX-wd-8F8"/>
+                <outlet property="_authenStatuLb" destination="f0t-VZ-tmf" id="RIw-XW-PJ1"/>
+                <outlet property="_authenStatuView" destination="piY-zp-vHO" id="Gpw-jp-JPy"/>
+                <outlet property="_noAuthenticationView" destination="aFK-W8-vUA" id="LVg-pr-eiC"/>
+                <outlet property="_privilegeBgView" destination="wgb-E8-tUK" id="VBZ-ni-I6l"/>
+                <outlet property="_privilegeImg1" destination="nqz-rh-Tf3" id="QgU-gZ-AdO"/>
+                <outlet property="_privilegeImg2" destination="HO2-HX-AcT" id="E3t-S0-O3i"/>
+                <outlet property="_privilegeImg3" destination="pNt-7g-TDa" id="mqL-Ix-GIY"/>
+                <outlet property="_privilegeImg4" destination="36M-gN-UMh" id="wRy-0x-y7y"/>
+                <outlet property="_privilegeView1" destination="7hN-69-ZrY" id="QMa-2a-3wA"/>
+                <outlet property="_privilegeView2" destination="KEV-bO-nnG" id="DVD-Qf-SVL"/>
+                <outlet property="_privilegeView3" destination="guc-ep-Tc2" id="TsU-R8-wC6"/>
+                <outlet property="_privilegeView4" destination="YHj-HK-Ob7" id="D4D-Gz-XhL"/>
+                <outlet property="_scrollView" destination="9eM-nq-mEx" id="S6S-L4-PLM"/>
+                <outlet property="_statusImg" destination="IVU-nN-loy" id="PWZ-WC-STz"/>
+                <outlet property="_titleImg" destination="tju-9O-QOA" id="pHZ-Lf-W3g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eM-nq-mEx">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtS-aE-AR8">
+                            <subviews>
+                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piY-zp-vHO">
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="realNameImg.png" translatesAutoresizingMaskIntoConstraints="NO" id="JVP-h9-q4Q">
+                                            <frame key="frameInset" minX="36" minY="36" width="70" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="您的认证申请快件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0t-VZ-tmf">
+                                            <frame key="frameInset" minX="114" minY="46" height="21" maxX="18"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.89411764705882346" green="0.25098039215686274" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正在加急审核中..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjK-Rp-WxW">
+                                            <frame key="frameInset" minX="114" minY="67" height="21" maxX="18"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.89411764705882346" green="0.25098039215686274" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="realName_noAudit.png" translatesAutoresizingMaskIntoConstraints="NO" id="IVU-nN-loy">
+                                            <frame key="frameInset" minX="87" minY="92" width="19" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="142" id="V1r-3Y-XNg"/>
+                                    </constraints>
+                                </view>
+                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFK-W8-vUA">
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="realNameImg.png" translatesAutoresizingMaskIntoConstraints="NO" id="tju-9O-QOA">
+                                            <frame key="frameInset" minX="49.84%" minY="26" width="70" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="realName_noAudit.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ru7-c1-Gl8">
+                                            <frame key="frameInset" minX="58.43%" minY="82" width="19" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="证明身份，点亮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txv-aI-TaY">
+                                            <frame key="frameInset" minX="48" minY="104" width="103" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="realName_audit.png" translatesAutoresizingMaskIntoConstraints="NO" id="0H5-vj-SeV">
+                                            <frame key="frameInset" minX="148" minY="108" width="19" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="图标，获得特权" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqj-9n-IrX">
+                                            <frame key="frameInset" minX="169" minY="104" width="103" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="142" id="daX-EL-rP0"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgb-E8-tUK">
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hN-69-ZrY">
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="账号安全升级，方便找回" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nrl-sf-k5F">
+                                                    <frame key="frameInset" minX="75" minY="16" width="177" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="realName_privilege1.png" translatesAutoresizingMaskIntoConstraints="NO" id="nqz-rh-Tf3">
+                                                    <frame key="frameInset" minX="32" minY="8" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="khg-mt-6W8"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEV-bO-nnG">
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="realName_privilege2.png" translatesAutoresizingMaskIntoConstraints="NO" id="HO2-HX-AcT">
+                                                    <frame key="frameInset" minX="32" minY="8" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="增加简历投递的响应速度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h0-HT-Wfn">
+                                                    <frame key="frameInset" minX="75" minY="16" width="177" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="gM8-xc-X6T"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guc-ep-Tc2">
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="realName_privilege3.png" translatesAutoresizingMaskIntoConstraints="NO" id="pNt-7g-TDa">
+                                                    <frame key="frameInset" minX="32" minY="8" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="账户余额提现更安全" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOb-RX-6FY">
+                                                    <frame key="frameInset" minX="75" minY="16" width="177" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="v2L-5B-bOC"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHj-HK-Ob7">
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="realName_privilege4.png" translatesAutoresizingMaskIntoConstraints="NO" id="36M-gN-UMh">
+                                                    <frame key="frameInset" minX="32" minY="8" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="更多社区专项安全" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sw-mw-aiy">
+                                                    <frame key="frameInset" minX="75" minY="16" width="177" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="Csc-U2-e29"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2G-6R-NUi">
+                                            <color key="backgroundColor" red="0.89411764705882346" green="0.25098039215686274" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="5BB-QP-HSg"/>
+                                            </constraints>
+                                            <state key="normal" title="马上认证，马上提现">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="CzZ-Lb-kP9"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="YHj-HK-Ob7" firstAttribute="trailing" secondItem="guc-ep-Tc2" secondAttribute="trailing" id="DoO-c4-Rl1"/>
+                                        <constraint firstItem="n2G-6R-NUi" firstAttribute="top" secondItem="YHj-HK-Ob7" secondAttribute="bottom" constant="22" id="G7m-AQ-mwz"/>
+                                        <constraint firstItem="YHj-HK-Ob7" firstAttribute="leading" secondItem="guc-ep-Tc2" secondAttribute="leading" id="Jw1-Nk-vVV"/>
+                                        <constraint firstItem="KEV-bO-nnG" firstAttribute="trailing" secondItem="7hN-69-ZrY" secondAttribute="trailing" id="QSm-xG-D4w"/>
+                                        <constraint firstItem="guc-ep-Tc2" firstAttribute="leading" secondItem="KEV-bO-nnG" secondAttribute="leading" id="R0s-Kh-UhS"/>
+                                        <constraint firstItem="n2G-6R-NUi" firstAttribute="leading" secondItem="YHj-HK-Ob7" secondAttribute="leading" id="SnB-eJ-Ybv"/>
+                                        <constraint firstItem="KEV-bO-nnG" firstAttribute="leading" secondItem="7hN-69-ZrY" secondAttribute="leading" id="Vg5-bR-bBC"/>
+                                        <constraint firstItem="guc-ep-Tc2" firstAttribute="trailing" secondItem="KEV-bO-nnG" secondAttribute="trailing" id="WaC-Gh-WQg"/>
+                                        <constraint firstItem="KEV-bO-nnG" firstAttribute="top" secondItem="7hN-69-ZrY" secondAttribute="bottom" constant="18" id="bDI-fn-PTU"/>
+                                        <constraint firstItem="n2G-6R-NUi" firstAttribute="trailing" secondItem="YHj-HK-Ob7" secondAttribute="trailing" id="cda-5X-axc"/>
+                                        <constraint firstAttribute="trailing" secondItem="7hN-69-ZrY" secondAttribute="trailing" constant="16" id="hDt-7S-spD"/>
+                                        <constraint firstItem="YHj-HK-Ob7" firstAttribute="top" secondItem="guc-ep-Tc2" secondAttribute="bottom" constant="18" id="he0-BC-coZ"/>
+                                        <constraint firstItem="7hN-69-ZrY" firstAttribute="leading" secondItem="wgb-E8-tUK" secondAttribute="leading" constant="16" id="i2J-pw-l2Z"/>
+                                        <constraint firstItem="guc-ep-Tc2" firstAttribute="top" secondItem="KEV-bO-nnG" secondAttribute="bottom" constant="18" id="iQl-c3-2sc"/>
+                                        <constraint firstItem="7hN-69-ZrY" firstAttribute="top" secondItem="wgb-E8-tUK" secondAttribute="top" constant="22" id="jhI-tU-MCA"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="aFK-W8-vUA" firstAttribute="top" secondItem="dtS-aE-AR8" secondAttribute="top" id="7nH-ev-KPJ"/>
+                                <constraint firstItem="piY-zp-vHO" firstAttribute="top" secondItem="dtS-aE-AR8" secondAttribute="top" id="ETZ-XZ-BMA"/>
+                                <constraint firstItem="wgb-E8-tUK" firstAttribute="leading" secondItem="dtS-aE-AR8" secondAttribute="leading" id="FwQ-gd-lai"/>
+                                <constraint firstAttribute="trailing" secondItem="piY-zp-vHO" secondAttribute="trailing" id="JdT-4T-b6d"/>
+                                <constraint firstAttribute="bottom" secondItem="wgb-E8-tUK" secondAttribute="bottom" id="fbH-mI-yG5"/>
+                                <constraint firstAttribute="trailing" secondItem="wgb-E8-tUK" secondAttribute="trailing" id="gH6-wG-Xyn"/>
+                                <constraint firstItem="wgb-E8-tUK" firstAttribute="top" secondItem="piY-zp-vHO" secondAttribute="bottom" id="iIj-2F-Sra"/>
+                                <constraint firstAttribute="height" constant="667" id="j1M-JQ-GxI"/>
+                                <constraint firstItem="piY-zp-vHO" firstAttribute="leading" secondItem="dtS-aE-AR8" secondAttribute="leading" id="s5Z-sQ-YNU"/>
+                                <constraint firstItem="aFK-W8-vUA" firstAttribute="leading" secondItem="dtS-aE-AR8" secondAttribute="leading" id="t5a-DO-KEt"/>
+                                <constraint firstAttribute="trailing" secondItem="aFK-W8-vUA" secondAttribute="trailing" id="ubW-9z-3xL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="dtS-aE-AR8" firstAttribute="top" secondItem="9eM-nq-mEx" secondAttribute="top" id="3Yy-FA-da1"/>
+                        <constraint firstAttribute="bottom" secondItem="dtS-aE-AR8" secondAttribute="bottom" id="QwS-0m-S42"/>
+                        <constraint firstItem="dtS-aE-AR8" firstAttribute="leading" secondItem="9eM-nq-mEx" secondAttribute="leading" id="bmU-Lf-8Ls"/>
+                        <constraint firstItem="dtS-aE-AR8" firstAttribute="centerX" secondItem="9eM-nq-mEx" secondAttribute="centerX" id="ppF-qa-aY1"/>
+                        <constraint firstAttribute="trailing" secondItem="dtS-aE-AR8" secondAttribute="trailing" id="ql1-An-mOf"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="xz1-UX-B0x"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9eM-nq-mEx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="N0I-Va-LiC"/>
+                <constraint firstItem="9eM-nq-mEx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="auE-c9-hrd"/>
+                <constraint firstAttribute="trailing" secondItem="9eM-nq-mEx" secondAttribute="trailing" id="q1C-bo-ZMp"/>
+                <constraint firstAttribute="bottom" secondItem="9eM-nq-mEx" secondAttribute="bottom" id="zb6-OM-2Ur"/>
+            </constraints>
+            <point key="canvasLocation" x="408" y="168"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="realNameImg.png" width="71" height="71"/>
+        <image name="realName_audit.png" width="14" height="10"/>
+        <image name="realName_noAudit.png" width="14" height="10"/>
+        <image name="realName_privilege1.png" width="35" height="36"/>
+        <image name="realName_privilege2.png" width="35" height="33"/>
+        <image name="realName_privilege3.png" width="34" height="37"/>
+        <image name="realName_privilege4.png" width="34" height="34"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

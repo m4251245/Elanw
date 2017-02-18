@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ELOAWebCtl">
+            <connections>
+                <outlet property="_addImg" destination="Ry8-nw-97A" id="hbT-ze-zn7"/>
+                <outlet property="_moreBtn" destination="evY-K8-GIi" id="yuq-mX-vOX"/>
+                <outlet property="backBtn_" destination="jOS-Bo-mTJ" id="hcO-1A-oX5"/>
+                <outlet property="closeBtn_" destination="xG2-dO-AC9" id="ftt-Qk-sGe"/>
+                <outlet property="myLeftBarBtnItem_" destination="bwg-jn-KQv" id="3lW-Y4-Vnu"/>
+                <outlet property="myRightBarBtnItem_" destination="SLV-nC-ESr" id="Lm7-dw-sK6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView_" destination="pyt-xX-WFt" id="VuR-fu-fdO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyt-xX-WFt">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="hvr-Gd-MCE"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pyt-xX-WFt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Efk-lJ-wga"/>
+                <constraint firstAttribute="trailing" secondItem="pyt-xX-WFt" secondAttribute="trailing" id="Fl4-xg-ev1"/>
+                <constraint firstAttribute="bottom" secondItem="pyt-xX-WFt" secondAttribute="bottom" id="as8-09-5IR"/>
+                <constraint firstItem="pyt-xX-WFt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zy7-hT-bmh"/>
+            </constraints>
+            <point key="canvasLocation" x="405" y="389"/>
+        </view>
+        <view contentMode="scaleToFill" id="bwg-jn-KQv">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOS-Bo-mTJ">
+                    <rect key="frame" x="0.0" y="0.0" width="30" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="bIe-zc-lg1"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="back_white_new.png"/>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="UVq-VE-ruu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG2-dO-AC9">
+                    <rect key="frame" x="30" y="0.0" width="40" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="fOX-iC-mtZ"/>
+                        <constraint firstAttribute="height" constant="44" id="l44-Xm-Q9K"/>
+                    </constraints>
+                    <state key="normal" title="关闭">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="VQQ-F7-FLa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jOS-Bo-mTJ" secondAttribute="bottom" id="3oB-7a-p3h"/>
+                <constraint firstAttribute="trailing" secondItem="xG2-dO-AC9" secondAttribute="trailing" id="LC2-ah-vCK"/>
+                <constraint firstItem="jOS-Bo-mTJ" firstAttribute="leading" secondItem="bwg-jn-KQv" secondAttribute="leading" id="XJT-N5-08Y"/>
+                <constraint firstItem="xG2-dO-AC9" firstAttribute="top" secondItem="bwg-jn-KQv" secondAttribute="top" id="YR6-D1-WEf"/>
+                <constraint firstItem="jOS-Bo-mTJ" firstAttribute="top" secondItem="bwg-jn-KQv" secondAttribute="top" id="pmd-S0-1WY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="678.5" y="182"/>
+        </view>
+        <view hidden="YES" contentMode="scaleToFill" id="SLV-nC-ESr">
+            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more_white_new.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ry8-nw-97A">
+                    <rect key="frame" x="4" y="4" width="22" height="22"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evY-K8-GIi">
+                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                    <connections>
+                        <action selector="moreBtnClick:" destination="-1" eventType="touchUpInside" id="Jqc-9f-Yo8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="evY-K8-GIi" secondAttribute="bottom" id="AWK-Cc-Pv2"/>
+                <constraint firstItem="Ry8-nw-97A" firstAttribute="centerY" secondItem="SLV-nC-ESr" secondAttribute="centerY" id="GKD-mw-cXC"/>
+                <constraint firstAttribute="trailing" secondItem="evY-K8-GIi" secondAttribute="trailing" id="Gwt-03-itk"/>
+                <constraint firstItem="evY-K8-GIi" firstAttribute="top" secondItem="SLV-nC-ESr" secondAttribute="top" id="Owr-M1-8Yy"/>
+                <constraint firstItem="evY-K8-GIi" firstAttribute="leading" secondItem="SLV-nC-ESr" secondAttribute="leading" id="WWW-jS-0rb"/>
+                <constraint firstItem="Ry8-nw-97A" firstAttribute="centerX" secondItem="SLV-nC-ESr" secondAttribute="centerX" id="osL-ms-fFN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="683" y="475.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_white_new.png" width="22" height="22"/>
+        <image name="more_white_new.png" width="22" height="22"/>
+    </resources>
+</document>

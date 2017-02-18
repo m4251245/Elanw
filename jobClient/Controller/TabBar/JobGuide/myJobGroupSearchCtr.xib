@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="myJobGroupSearchCtr">
+            <connections>
+                <outlet property="addQuesView" destination="RHn-xA-J9g" id="AG6-Zo-BWK"/>
+                <outlet property="addQuesbtn" destination="WrG-FU-j3p" id="3f8-ME-2a9"/>
+                <outlet property="paeaseLable" destination="k01-Gh-Es1" id="Czq-A8-cun"/>
+                <outlet property="searchBar" destination="JRq-jW-0LG" id="Ug8-cl-KG6"/>
+                <outlet property="searchVIew" destination="giZ-xd-zEY" id="VFe-Wy-pBI"/>
+                <outlet property="tableView_" destination="RsU-7h-zqX" id="5CB-KE-4fm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入提问的内容" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k01-Gh-Es1">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Shj-yG-4jZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHn-xA-J9g">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrG-FU-j3p">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="+添加问题">
+                                <color key="titleColor" red="0.95294117649999999" green="0.34959832018109427" blue="0.36806145206126678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="pp3-9Q-lCj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="BzT-d8-Fkw"/>
+                        <constraint firstItem="WrG-FU-j3p" firstAttribute="width" secondItem="RHn-xA-J9g" secondAttribute="width" constant="-20" id="ZMJ-Dz-fXC"/>
+                        <constraint firstItem="WrG-FU-j3p" firstAttribute="leading" secondItem="RHn-xA-J9g" secondAttribute="leading" constant="10" id="ZsK-bQ-jlW"/>
+                        <constraint firstItem="WrG-FU-j3p" firstAttribute="height" secondItem="RHn-xA-J9g" secondAttribute="height" constant="-16" id="hwN-6P-Pfc"/>
+                        <constraint firstItem="WrG-FU-j3p" firstAttribute="top" secondItem="RHn-xA-J9g" secondAttribute="top" constant="8" id="xBE-Zt-0Zt"/>
+                    </constraints>
+                </view>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RsU-7h-zqX">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="k01-Gh-Es1" secondAttribute="trailing" constant="73" id="33i-VZ-raU"/>
+                <constraint firstAttribute="trailing" secondItem="RsU-7h-zqX" secondAttribute="trailing" id="5ck-wT-lSJ"/>
+                <constraint firstItem="RsU-7h-zqX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="N5C-Qo-dRJ"/>
+                <constraint firstAttribute="bottom" secondItem="RsU-7h-zqX" secondAttribute="bottom" constant="2" id="Qjx-ya-xsk"/>
+                <constraint firstItem="k01-Gh-Es1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="73" id="VY5-BH-GRK"/>
+                <constraint firstItem="k01-Gh-Es1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="bjj-Ov-hPE"/>
+                <constraint firstItem="RHn-xA-J9g" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ck4-0F-uhc"/>
+                <constraint firstAttribute="trailing" secondItem="RHn-xA-J9g" secondAttribute="trailing" id="mhC-Hc-hrt"/>
+                <constraint firstItem="RsU-7h-zqX" firstAttribute="top" secondItem="RHn-xA-J9g" secondAttribute="bottom" id="rIA-ZI-dkV"/>
+                <constraint firstItem="RHn-xA-J9g" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tKG-aJ-Rqw"/>
+            </constraints>
+            <point key="canvasLocation" x="315" y="342"/>
+        </view>
+        <view contentMode="scaleToFill" id="giZ-xd-zEY">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" searchBarStyle="prominent" text="" placeholder="输入问题关键词" translatesAutoresizingMaskIntoConstraints="NO" id="JRq-jW-0LG">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="SMr-bE-rUh"/>
+                    </constraints>
+                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="barTintColor" red="0.8901960784313725" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JRq-jW-0LG" firstAttribute="width" secondItem="giZ-xd-zEY" secondAttribute="width" id="1Od-uc-qHL"/>
+                <constraint firstItem="JRq-jW-0LG" firstAttribute="leading" secondItem="giZ-xd-zEY" secondAttribute="leading" id="PCl-94-HeV"/>
+                <constraint firstItem="JRq-jW-0LG" firstAttribute="top" secondItem="giZ-xd-zEY" secondAttribute="top" constant="-7" id="lcu-Pv-2Kv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="656" y="341"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

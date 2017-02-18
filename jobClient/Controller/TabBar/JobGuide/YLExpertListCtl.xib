@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YLExpertListCtl">
+            <connections>
+                <outlet property="contentScrollView" destination="fY5-73-CRM" id="rur-zi-2fJ"/>
+                <outlet property="expertBtn" destination="vX3-R8-9lH" id="S33-be-Js7"/>
+                <outlet property="interviewBtn" destination="17b-jL-gEw" id="WH9-06-oxd"/>
+                <outlet property="lineImage" destination="Gu8-U8-Lyi" id="aYr-Q4-Vgv"/>
+                <outlet property="listScrollView" destination="Vdv-bk-78v" id="hrC-AC-e63"/>
+                <outlet property="popView" destination="fIC-lM-Cvp" id="4hD-pI-WYj"/>
+                <outlet property="rightMoreBtn" destination="yHL-JO-0on" id="dxg-z5-eTv"/>
+                <outlet property="searchBar_" destination="6Yg-9c-1IX" id="qyK-FF-pon"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="从所有行家中搜索" translatesAutoresizingMaskIntoConstraints="NO" id="6Yg-9c-1IX">
+                    <rect key="frame" x="0.0" y="-1" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="mcz-v1-xN0"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fY5-73-CRM">
+                    <rect key="frame" x="0.0" y="41" width="375" height="35"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="YBw-Y0-lu7"/>
+                    </constraints>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdv-bk-78v">
+                    <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fY5-73-CRM" firstAttribute="top" secondItem="6Yg-9c-1IX" secondAttribute="bottom" constant="-2" id="2nP-lg-pni"/>
+                <constraint firstAttribute="trailing" secondItem="fY5-73-CRM" secondAttribute="trailing" id="5re-pE-G2j"/>
+                <constraint firstItem="fY5-73-CRM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7zR-O4-5ip"/>
+                <constraint firstItem="6Yg-9c-1IX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="A2D-gB-f2d"/>
+                <constraint firstAttribute="trailing" secondItem="Vdv-bk-78v" secondAttribute="trailing" id="Cmv-dq-UZQ"/>
+                <constraint firstItem="Vdv-bk-78v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HSQ-tf-gKk"/>
+                <constraint firstItem="6Yg-9c-1IX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-1" id="Zjl-Bb-mff"/>
+                <constraint firstAttribute="trailing" secondItem="6Yg-9c-1IX" secondAttribute="trailing" id="fTZ-3v-UCh"/>
+                <constraint firstItem="Vdv-bk-78v" firstAttribute="top" secondItem="fY5-73-CRM" secondAttribute="bottom" id="irP-4Q-C2k"/>
+                <constraint firstAttribute="bottom" secondItem="Vdv-bk-78v" secondAttribute="bottom" id="iuT-Ab-fhc"/>
+            </constraints>
+            <point key="canvasLocation" x="-102" y="129"/>
+        </view>
+        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_title.png" id="Gu8-U8-Lyi">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="3"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+        </imageView>
+        <view contentMode="scaleToFill" id="fIC-lM-Cvp">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GR1-Cp-Aut">
+                    <rect key="frame" x="175" y="8" width="135" height="103"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_button_image" translatesAutoresizingMaskIntoConstraints="NO" id="BvA-8D-hil">
+                            <rect key="frame" x="0.0" y="0.0" width="135" height="103"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX3-R8-9lH">
+                            <rect key="frame" x="0.0" y="8" width="135" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="bFJ-Nc-IqD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                            <state key="normal" title="行家特权" image="jobguideexpert.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="Iv2-yQ-E0k"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17b-jL-gEw">
+                            <rect key="frame" x="0.0" y="53" width="135" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="0Hn-R6-Il9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                            <state key="normal" title="我的约谈" image="jobguideInterview.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="loO-7p-rTC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="BvA-8D-hil" secondAttribute="bottom" id="4Bk-aD-gCP"/>
+                        <constraint firstAttribute="width" constant="135" id="5f3-Vj-MW4"/>
+                        <constraint firstAttribute="trailing" secondItem="BvA-8D-hil" secondAttribute="trailing" id="90O-9E-IAA"/>
+                        <constraint firstItem="BvA-8D-hil" firstAttribute="leading" secondItem="GR1-Cp-Aut" secondAttribute="leading" id="FQN-lV-wcy"/>
+                        <constraint firstAttribute="height" constant="103" id="Pdu-U9-OcF"/>
+                        <constraint firstAttribute="trailing" secondItem="vX3-R8-9lH" secondAttribute="trailing" id="Tf8-L3-fC7"/>
+                        <constraint firstItem="BvA-8D-hil" firstAttribute="top" secondItem="GR1-Cp-Aut" secondAttribute="top" id="Tsd-hK-r8P"/>
+                        <constraint firstItem="vX3-R8-9lH" firstAttribute="top" secondItem="GR1-Cp-Aut" secondAttribute="top" constant="8" id="WP8-YF-TE2"/>
+                        <constraint firstItem="vX3-R8-9lH" firstAttribute="leading" secondItem="GR1-Cp-Aut" secondAttribute="leading" id="ZJe-hP-WGQ"/>
+                        <constraint firstAttribute="bottom" secondItem="17b-jL-gEw" secondAttribute="bottom" id="h3G-N3-deg"/>
+                        <constraint firstItem="17b-jL-gEw" firstAttribute="leading" secondItem="GR1-Cp-Aut" secondAttribute="leading" id="oY5-QM-64u"/>
+                        <constraint firstAttribute="trailing" secondItem="17b-jL-gEw" secondAttribute="trailing" id="qmT-km-9w0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GR1-Cp-Aut" secondAttribute="trailing" constant="10" id="efW-o9-9xl"/>
+                <constraint firstItem="GR1-Cp-Aut" firstAttribute="top" secondItem="fIC-lM-Cvp" secondAttribute="top" constant="8" id="yd4-0O-5FH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="699" y="293"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yHL-JO-0on">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <state key="normal" image="more_white_new.png">
+                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <connections>
+                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="AmN-QY-MHG"/>
+            </connections>
+            <point key="canvasLocation" x="761" y="286"/>
+        </button>
+    </objects>
+    <resources>
+        <image name="back_button_image" width="150" height="115"/>
+        <image name="bg_title.png" width="640" height="80"/>
+        <image name="jobguideInterview.png" width="25" height="25"/>
+        <image name="jobguideexpert.png" width="25" height="25"/>
+        <image name="more_white_new.png" width="22" height="22"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

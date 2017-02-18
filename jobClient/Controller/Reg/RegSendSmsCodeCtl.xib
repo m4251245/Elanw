@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegSendSmsCodeCtl">
+            <connections>
+                <outlet property="editSmsBtn" destination="TbX-wc-brT" id="3od-iS-DPt"/>
+                <outlet property="msgContentLb" destination="XgS-yl-uBX" id="UfM-jc-WAO"/>
+                <outlet property="msgToLb" destination="0RU-0a-nGd" id="tK2-Ni-RaW"/>
+                <outlet property="phoneLb" destination="UaI-li-CiN" id="Nux-HC-TDa"/>
+                <outlet property="sendedSmsBtn" destination="Tjr-DU-8D7" id="TnK-aG-gog"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbX-wc-brT">
+                    <rect key="frame" x="20" y="269" width="335" height="45"/>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="302-VV-FZB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="马上去发短信">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="editMsg:" destination="-1" eventType="touchUpInside" id="NL2-IV-C5v"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regiser_phone_message" translatesAutoresizingMaskIntoConstraints="NO" id="jOJ-Nb-vhU">
+                    <rect key="frame" x="146" y="39" width="83" height="113"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="113" id="BZz-mv-lSc"/>
+                        <constraint firstAttribute="width" constant="83" id="Ycn-ny-xcp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请使用手机187****9140" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaI-li-CiN">
+                    <rect key="frame" x="0.0" y="188" width="375" height="20"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                    <color key="textColor" red="0.38039215686274508" green="0.38039215686274508" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="除运营商收取的标准短信资费外，无额外费用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRG-R2-sgc">
+                    <rect key="frame" x="65" y="401" width="246" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                    <color key="textColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6UT-kY-jYn">
+                    <rect key="frame" x="46" y="217" width="284" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="编辑短信" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQQ-8X-MFk">
+                            <rect key="frame" x="0.0" y="0.0" width="66" height="20"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <color key="textColor" red="0.3803921569" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="b3m7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgS-yl-uBX">
+                            <rect key="frame" x="66" y="0.0" width="41" height="20"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <color key="textColor" red="0.97254901960784312" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送至" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDk-ac-F3B">
+                            <rect key="frame" x="107" y="0.0" width="49" height="20"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <color key="textColor" red="0.3803921569" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10690420133792" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RU-0a-nGd">
+                            <rect key="frame" x="156" y="0.0" width="128" height="20"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <color key="textColor" red="0.97254901960784312" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="0RU-0a-nGd" firstAttribute="leading" secondItem="RDk-ac-F3B" secondAttribute="trailing" id="Fj2-I3-GkO"/>
+                        <constraint firstItem="PQQ-8X-MFk" firstAttribute="top" secondItem="6UT-kY-jYn" secondAttribute="top" id="G8Y-BM-7l6"/>
+                        <constraint firstAttribute="trailing" secondItem="0RU-0a-nGd" secondAttribute="trailing" id="Ges-OK-7om"/>
+                        <constraint firstItem="XgS-yl-uBX" firstAttribute="leading" secondItem="PQQ-8X-MFk" secondAttribute="trailing" id="Ohh-jd-7Ea"/>
+                        <constraint firstItem="RDk-ac-F3B" firstAttribute="top" secondItem="6UT-kY-jYn" secondAttribute="top" id="RKH-rm-YO6"/>
+                        <constraint firstItem="XgS-yl-uBX" firstAttribute="top" secondItem="6UT-kY-jYn" secondAttribute="top" id="U9t-Xg-15B"/>
+                        <constraint firstAttribute="height" constant="20" id="Wuj-zV-LWQ"/>
+                        <constraint firstItem="0RU-0a-nGd" firstAttribute="top" secondItem="6UT-kY-jYn" secondAttribute="top" id="haY-HY-IT5"/>
+                        <constraint firstItem="PQQ-8X-MFk" firstAttribute="leading" secondItem="6UT-kY-jYn" secondAttribute="leading" id="r89-wf-JJm"/>
+                        <constraint firstItem="RDk-ac-F3B" firstAttribute="leading" secondItem="XgS-yl-uBX" secondAttribute="trailing" id="xa6-hp-RSb"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjr-DU-8D7">
+                    <rect key="frame" x="21" y="334" width="334" height="45"/>
+                    <color key="backgroundColor" red="1" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="kNj-Z5-wFP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="已发送短信">
+                        <color key="titleColor" red="0.97254901960784312" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goRegist:" destination="-1" eventType="touchUpInside" id="niT-Wf-bwy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Tjr-DU-8D7" firstAttribute="top" secondItem="TbX-wc-brT" secondAttribute="bottom" constant="20" id="0Gv-pB-xuJ"/>
+                <constraint firstItem="DRG-R2-sgc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1oo-cE-f6x"/>
+                <constraint firstItem="DRG-R2-sgc" firstAttribute="top" secondItem="Tjr-DU-8D7" secondAttribute="bottom" constant="22" id="2AE-Uy-0n4"/>
+                <constraint firstItem="TbX-wc-brT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="6vI-2X-iI5"/>
+                <constraint firstItem="6UT-kY-jYn" firstAttribute="top" secondItem="UaI-li-CiN" secondAttribute="bottom" constant="9" id="FWt-8E-Rto"/>
+                <constraint firstItem="Tjr-DU-8D7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="21" id="IdI-cn-arp"/>
+                <constraint firstItem="UaI-li-CiN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MbV-LN-XQM"/>
+                <constraint firstItem="jOJ-Nb-vhU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="39" id="R99-Yr-YLb"/>
+                <constraint firstAttribute="trailing" secondItem="TbX-wc-brT" secondAttribute="trailing" constant="20" id="UAT-M3-edM"/>
+                <constraint firstAttribute="trailing" secondItem="UaI-li-CiN" secondAttribute="trailing" id="V0d-tc-DO1"/>
+                <constraint firstItem="TbX-wc-brT" firstAttribute="top" secondItem="6UT-kY-jYn" secondAttribute="bottom" constant="32" id="aC5-qp-Xht"/>
+                <constraint firstItem="jOJ-Nb-vhU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bZB-I9-hNb"/>
+                <constraint firstItem="6UT-kY-jYn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hDG-lf-2w0"/>
+                <constraint firstAttribute="trailing" secondItem="Tjr-DU-8D7" secondAttribute="trailing" constant="20" id="inS-Bd-gDr"/>
+                <constraint firstItem="UaI-li-CiN" firstAttribute="top" secondItem="jOJ-Nb-vhU" secondAttribute="bottom" constant="36" id="lAI-32-LAm"/>
+            </constraints>
+            <point key="canvasLocation" x="372.5" y="311.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="regiser_phone_message" width="83" height="113"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

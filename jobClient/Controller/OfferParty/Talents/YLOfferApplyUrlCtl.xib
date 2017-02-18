@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YLOfferApplyUrlCtl">
+            <connections>
+                <outlet property="applyBtn" destination="xfR-gJ-uOg" id="yc7-J8-Lxd"/>
+                <outlet property="backView" destination="1En-8h-wwd" id="gZe-BZ-ll1"/>
+                <outlet property="indicatorView" destination="JWN-I5-MSS" id="bmd-38-8Yd"/>
+                <outlet property="shareBtn" destination="lEY-dJ-ghE" id="UbN-ae-ejs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="Vv1-jB-Jm8" id="Sco-aP-7m5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vv1-jB-Jm8">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="rY5-6L-zjB"/>
+                    </connections>
+                </webView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0B-Hu-M1B">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfR-gJ-uOg">
+                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
+                            <state key="normal" title="立即报名">
+                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="applyRespone:" destination="-1" eventType="touchUpInside" id="ykq-ga-yQ8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.84761559963226318" green="0.15246033668518066" blue="0.19121113419532776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="xfR-gJ-uOg" firstAttribute="leading" secondItem="E0B-Hu-M1B" secondAttribute="leading" id="2dt-z0-JXZ"/>
+                        <constraint firstItem="xfR-gJ-uOg" firstAttribute="top" secondItem="E0B-Hu-M1B" secondAttribute="top" id="E7S-xg-aWB"/>
+                        <constraint firstAttribute="height" constant="42" id="Lxn-Bb-NOv"/>
+                        <constraint firstAttribute="trailing" secondItem="xfR-gJ-uOg" secondAttribute="trailing" id="pgS-ou-XFt"/>
+                        <constraint firstAttribute="bottom" secondItem="xfR-gJ-uOg" secondAttribute="bottom" id="wze-lQ-W4J"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="JWN-I5-MSS"/>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vv1-jB-Jm8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8WB-Eo-lrw"/>
+                <constraint firstItem="Vv1-jB-Jm8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9ZW-7H-8ir"/>
+                <constraint firstItem="E0B-Hu-M1B" firstAttribute="top" secondItem="Vv1-jB-Jm8" secondAttribute="bottom" id="B17-Ae-DeT"/>
+                <constraint firstItem="JWN-I5-MSS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="D94-AI-Wap"/>
+                <constraint firstItem="JWN-I5-MSS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FxB-iS-qOY"/>
+                <constraint firstItem="E0B-Hu-M1B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TBC-99-HzT"/>
+                <constraint firstAttribute="bottom" secondItem="E0B-Hu-M1B" secondAttribute="bottom" id="W1E-HX-dfT"/>
+                <constraint firstAttribute="trailing" secondItem="Vv1-jB-Jm8" secondAttribute="trailing" id="d17-at-Y9X"/>
+                <constraint firstAttribute="trailing" secondItem="E0B-Hu-M1B" secondAttribute="trailing" id="hdL-Kh-XqP"/>
+                <constraint firstItem="E0B-Hu-M1B" firstAttribute="centerX" secondItem="JWN-I5-MSS" secondAttribute="centerX" id="vQU-db-PXJ"/>
+            </constraints>
+            <point key="canvasLocation" x="-297" y="-139"/>
+        </view>
+        <view contentMode="scaleToFill" id="1En-8h-wwd">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEY-dJ-ghE">
+                    <frame key="frameInset" minX="28" minY="48" width="22" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="share_white-2.png">
+                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="LC0-5M-Hzn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="119" y="-108"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="share_white-2.png" width="22" height="22"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

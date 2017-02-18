@@ -1,0 +1,76 @@
+//
+//  jobClient-Prefix.pch
+//  jobClient
+//
+//  Created by 一览ios on 16/6/21.
+//  Copyright © 2016年 YL1001. All rights reserved.
+//
+
+#ifndef jobClient_Prefix_pch
+#define jobClient_Prefix_pch
+
+#ifdef __OBJC__
+//    #import <UIKit/UIKit.h>
+//    #import <Foundation/Foundation.h>
+    #import "GAI.h"
+    #import "GAIFields.h"
+    #import "GAITracker.h"
+    #import "GAIDictionaryBuilder.h"
+
+    #import <tingyunApp/NBSAppAgent.h>
+    #import "ELMacro.h"
+    #import "ELUserDefault.h"
+    #import "UIViewExt.h"
+    #import "UMMobClick/MobClick.h"
+    #import "UINavigationController+FDFullscreenPopGesture.h"
+    #import "MBProgressHUD+Add.h"
+    #import "UIImageView+WebCache.h"
+    #import "UIButton+WebCache.h"
+    #import "ELRequest.h"
+    #import "MyCommon.h"
+    #import "Manager.h"
+    #import "NoNetworkVIew.h"
+    #import "ELLineView.h"
+    #import "ELJPush.h"
+    #import "UIImage+category.h"
+    #import "NSDate+String.h"
+    #import "NSNumber+Other.h"
+    #import "NSMutableDictionary+New.h"
+    #import "NSString+URLEncoding.h"
+    #import "NSString+Check.h"
+    #import "UIScrollView+touch.h"
+    #import "NSObject+ObjToDIc.h"
+    #import "ELScanQRCodeCtl.h"
+    #import "NSMutableAttributedString+NewClass.h"
+    #import "ELBaseButton.h"
+    #import "ELBaseLabel.h"
+    #import "ExRequetCon.h"
+#endif
+
+/*******************<上线注意事项>***************************
+ * 1.更改版本号。
+ * 2.更改生产环境
+ * 3.更改Build Configuration  Deubg->Release
+ * 4.增加64位指令集
+ * 5.开启听云
+ * 6.更改极光key 可不用改
+ * 7.ELWebSocketManager.m  修改app_tun
+ * 8.code signing identity签名证书,provisioning profile配置文件,clear清除缓存，build编译，archive打包，validate验证，submit提交，等待uploading完成，提交审核。
+ **********************************************/
+
+//以下这3项是每次发布版本都需要修改
+#define SeviceURL  @"http://api.job1001.com/webservice/index.php?gtype=http"        //外网服务器地址,120.132.146.117测试服务器地址, api.job1001.com正式服务器地址
+
+#define NewSeviceURL  @"http://api4.job1001.com/workroot/webservice/indexp.php?gtype=http"//正式地址为api4.job1001.com
+#define  New_Request_Version   @"v1"
+
+
+#define ClientVersion      @"5.9.12.3"
+#define  Request_Version   @"v5.9.12.3"
+
+//#define Version_Str @"5.9.7"//注意与appstore上面构建的版本号相同
+
+#define Version_Show @"v5.9.12.3"//版本记录显示的版本 日稳定版带t
+
+
+#endif /* jobClient_Prefix_pch */

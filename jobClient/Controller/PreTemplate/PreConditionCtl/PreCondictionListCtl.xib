@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PreCondictionListCtl">
+            <connections>
+                <outlet property="contentView_" destination="2hz-qT-E2A" id="o4i-0x-6DI"/>
+                <outlet property="nullBtn_" destination="PwL-bC-axQ" id="Nn6-Yk-7HN"/>
+                <outlet property="okBtn_" destination="Ahd-Zc-WKp" id="Zrx-23-uY4"/>
+                <outlet property="pickView_" destination="r9H-St-Fyp" id="gzP-jS-jAe"/>
+                <outlet property="tableView_" destination="MMl-q1-N6r" id="374-Jb-IaO"/>
+                <outlet property="timeToNowBtn_" destination="oWf-hM-yZH" id="EF0-Or-YNz"/>
+                <outlet property="view" destination="QfZ-ak-lEi" id="8B8-bI-l8F"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QfZ-ak-lEi">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="MMl-q1-N6r">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="883" y="53"/>
+        </view>
+        <view contentMode="scaleToFill" id="2hz-qT-E2A">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="OTG-dP-QPK">
+                    <rect key="frame" x="0.0" y="407" width="375" height="45"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oWf-hM-yZH">
+                    <rect key="frame" x="135" y="411" width="92" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="至今" backgroundImage="btn_login.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="WZR-ei-3UU"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="CpF-QD-pZL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="409"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PwL-bC-axQ">
+                    <rect key="frame" x="8" y="414" width="70" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="0.88235294119999996" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                    <state key="normal" title="不限">
+                        <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="VWX-vf-HeT"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="pD1-VM-Qnw">
+                    <rect key="frame" x="0.0" y="452" width="375" height="246"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <pickerView contentMode="scaleToFill" misplaced="YES" id="r9H-St-Fyp">
+                    <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ahd-Zc-WKp">
+                    <rect key="frame" x="297" y="413" width="70" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="0.88235294119999996" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                    <state key="normal" title="完成">
+                        <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="lZc-4n-bd6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="454" y="53"/>
+        </view>
+        <datePicker multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="fqv-md-ED4">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.2470588235" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <date key="date" timeIntervalSinceReferenceDate="-410275144.43437999">
+                <!--1988-01-01 10:40:55 +0000-->
+            </date>
+            <date key="minimumDate" timeIntervalSinceReferenceDate="-1483191000">
+                <!--1954-01-01 10:30:00 +0000-->
+            </date>
+            <date key="maximumDate" timeIntervalSinceReferenceDate="599482800">
+                <!--2019-12-31 11:00:00 +0000-->
+            </date>
+            <locale key="locale" localeIdentifier="zh"/>
+            <point key="canvasLocation" x="54" y="52"/>
+        </datePicker>
+    </objects>
+    <resources>
+        <image name="btn_login.png" width="258" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

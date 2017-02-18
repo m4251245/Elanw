@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExpertListCtl">
+            <connections>
+                <outlet property="applyBtn" destination="8x5-A9-ulu" id="mbP-mE-9br"/>
+                <outlet property="applyExpertView" destination="P0g-qi-kFC" id="WcY-CK-cpD"/>
+                <outlet property="footerView" destination="iWA-Dn-37I" id="gUt-LD-YiQ"/>
+                <outlet property="moreExpertBtn_" destination="vzO-gt-nax" id="c43-MS-Qki"/>
+                <outlet property="tableView_" destination="0E0-ts-vPK" id="gHh-X0-uhe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0E0-ts-vPK">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="v0U-RO-EPa"/>
+                        <outlet property="delegate" destination="-1" id="c1o-gy-5VJ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0E0-ts-vPK" secondAttribute="bottom" id="4Z1-8Q-Xqz"/>
+                <constraint firstItem="0E0-ts-vPK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8Ns-RB-45Z"/>
+                <constraint firstItem="0E0-ts-vPK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="COQ-Ne-1af"/>
+                <constraint firstAttribute="trailing" secondItem="0E0-ts-vPK" secondAttribute="trailing" id="rMu-9c-5ae"/>
+            </constraints>
+            <point key="canvasLocation" x="288" y="428"/>
+        </view>
+        <view contentMode="scaleToFill" id="iWA-Dn-37I">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzO-gt-nax">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="查看更多行家">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="yrZ-W1-hO5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vzO-gt-nax" secondAttribute="bottom" id="6eb-4x-hIB"/>
+                <constraint firstAttribute="trailing" secondItem="vzO-gt-nax" secondAttribute="trailing" id="R9V-Q7-MeX"/>
+                <constraint firstItem="vzO-gt-nax" firstAttribute="leading" secondItem="iWA-Dn-37I" secondAttribute="leading" id="gnD-By-W7s"/>
+                <constraint firstItem="vzO-gt-nax" firstAttribute="top" secondItem="iWA-Dn-37I" secondAttribute="top" id="xhI-Tg-UK3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="656" y="161.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="P0g-qi-kFC">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applyExpertImg.png" translatesAutoresizingMaskIntoConstraints="NO" id="fnf-XO-IyE">
+                    <rect key="frame" x="0.0" y="8" width="320" height="118"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="除了工作，还有另一种让知识和经验变现的方式！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-g5-guF">
+                    <rect key="frame" x="8" y="40" width="304" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="XXt-4n-Z9h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8x5-A9-ulu">
+                    <rect key="frame" x="113" y="75" width="95" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="JNa-kA-GfK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="马上去申请">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="bKC-m1-ETk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8x5-A9-ulu" firstAttribute="top" secondItem="PAa-g5-guF" secondAttribute="bottom" constant="8" id="3ov-Ar-j0U"/>
+                <constraint firstAttribute="trailing" secondItem="8x5-A9-ulu" secondAttribute="trailing" constant="112" id="91y-js-V0n"/>
+                <constraint firstItem="8x5-A9-ulu" firstAttribute="leading" secondItem="P0g-qi-kFC" secondAttribute="leading" constant="113" id="Aj3-RC-9RI"/>
+                <constraint firstItem="PAa-g5-guF" firstAttribute="top" secondItem="P0g-qi-kFC" secondAttribute="top" constant="40" id="BSB-NY-aqy"/>
+                <constraint firstItem="fnf-XO-IyE" firstAttribute="top" secondItem="P0g-qi-kFC" secondAttribute="top" constant="8" id="DfX-5G-b1O"/>
+                <constraint firstItem="PAa-g5-guF" firstAttribute="leading" secondItem="P0g-qi-kFC" secondAttribute="leading" constant="8" id="M5w-hV-KUW"/>
+                <constraint firstItem="fnf-XO-IyE" firstAttribute="leading" secondItem="P0g-qi-kFC" secondAttribute="leading" id="QyE-Ix-aNc"/>
+                <constraint firstAttribute="trailing" secondItem="PAa-g5-guF" secondAttribute="trailing" constant="8" id="V5y-lF-HUT"/>
+                <constraint firstAttribute="trailing" secondItem="fnf-XO-IyE" secondAttribute="trailing" id="XnJ-RW-4p3"/>
+                <constraint firstAttribute="bottom" secondItem="fnf-XO-IyE" secondAttribute="bottom" id="Xrw-tb-Vdm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="656" y="306"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="applyExpertImg.png" width="357" height="118"/>
+    </resources>
+</document>

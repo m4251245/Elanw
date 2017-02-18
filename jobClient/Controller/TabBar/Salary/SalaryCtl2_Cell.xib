@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SalaryCtl2_Cell" rowHeight="88" id="KGk-i7-Jjw" customClass="SalaryCtl2_Cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAh-uj-KcA">
+                        <rect key="frame" x="0.0" y="54" width="320" height="25"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="groupShareBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="PI3-6m-d5S">
+                                <rect key="frame" x="138" y="3" width="45" height="20"/>
+                            </imageView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4n8-uc-WTc">
+                                <rect key="frame" x="138" y="3" width="45" height="20"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="-2"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-3"/>
+                                <state key="normal" title="81" image="groupArticleCommentNormal.png">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="groupShareBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="w2V-u4-0nW">
+                                <rect key="frame" x="248" y="3" width="45" height="20"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3M-td-Mxw">
+                                <rect key="frame" x="248" y="3" width="45" height="20"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-2"/>
+                                <state key="normal" title="607" image="addLikeNormal.png">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="addLikeSeleted.png">
+                                    <color key="titleColor" red="0.95294117649999999" green="0.16078431369999999" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="groupShareBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="HPG-dz-Sbv">
+                                <rect key="frame" x="27" y="3" width="45" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="9HN-Fc-qSo"/>
+                                    <constraint firstAttribute="height" constant="20" id="bec-Lg-tHU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F4-pY-08p">
+                                <rect key="frame" x="27" y="3" width="45" height="20"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="-4"/>
+                                <state key="normal" image="groupShareNormal.png">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w2V-u4-0nW" firstAttribute="bottom" secondItem="PI3-6m-d5S" secondAttribute="bottom" id="0Ya-56-ITe"/>
+                            <constraint firstItem="r3M-td-Mxw" firstAttribute="bottom" secondItem="w2V-u4-0nW" secondAttribute="bottom" id="1Ee-ap-g6B"/>
+                            <constraint firstItem="4n8-uc-WTc" firstAttribute="trailing" secondItem="PI3-6m-d5S" secondAttribute="trailing" id="2Ez-pn-EFJ"/>
+                            <constraint firstAttribute="trailing" secondItem="w2V-u4-0nW" secondAttribute="trailing" constant="27" id="2om-ho-sAT"/>
+                            <constraint firstItem="4n8-uc-WTc" firstAttribute="bottom" secondItem="PI3-6m-d5S" secondAttribute="bottom" id="92z-gg-K6r"/>
+                            <constraint firstItem="r3M-td-Mxw" firstAttribute="trailing" secondItem="w2V-u4-0nW" secondAttribute="trailing" id="9gh-hp-1I2"/>
+                            <constraint firstItem="r3M-td-Mxw" firstAttribute="leading" secondItem="w2V-u4-0nW" secondAttribute="leading" id="Ank-5x-m46"/>
+                            <constraint firstItem="4F4-pY-08p" firstAttribute="bottom" secondItem="HPG-dz-Sbv" secondAttribute="bottom" id="FCQ-Sj-ABE"/>
+                            <constraint firstItem="w2V-u4-0nW" firstAttribute="top" secondItem="PI3-6m-d5S" secondAttribute="top" id="IIv-Pk-lJS"/>
+                            <constraint firstAttribute="height" constant="25" id="KkB-94-6cv"/>
+                            <constraint firstItem="PI3-6m-d5S" firstAttribute="height" secondItem="HPG-dz-Sbv" secondAttribute="height" id="LM6-hK-O2z"/>
+                            <constraint firstItem="PI3-6m-d5S" firstAttribute="centerX" secondItem="aAh-uj-KcA" secondAttribute="centerX" id="MmH-ob-59a"/>
+                            <constraint firstItem="PI3-6m-d5S" firstAttribute="width" secondItem="HPG-dz-Sbv" secondAttribute="width" id="PgQ-ag-EYb"/>
+                            <constraint firstItem="4F4-pY-08p" firstAttribute="trailing" secondItem="HPG-dz-Sbv" secondAttribute="trailing" id="Pma-X0-55a"/>
+                            <constraint firstItem="4F4-pY-08p" firstAttribute="top" secondItem="HPG-dz-Sbv" secondAttribute="top" id="QBh-Ot-uSV"/>
+                            <constraint firstItem="HPG-dz-Sbv" firstAttribute="top" secondItem="aAh-uj-KcA" secondAttribute="top" constant="3" id="YPV-rv-7V8"/>
+                            <constraint firstItem="4n8-uc-WTc" firstAttribute="top" secondItem="PI3-6m-d5S" secondAttribute="top" id="ZhB-6R-Mlh"/>
+                            <constraint firstItem="4n8-uc-WTc" firstAttribute="leading" secondItem="PI3-6m-d5S" secondAttribute="leading" id="iMa-Yc-56n"/>
+                            <constraint firstItem="r3M-td-Mxw" firstAttribute="top" secondItem="w2V-u4-0nW" secondAttribute="top" id="nQk-2B-rlt"/>
+                            <constraint firstItem="4F4-pY-08p" firstAttribute="leading" secondItem="HPG-dz-Sbv" secondAttribute="leading" id="rbY-w5-zfG"/>
+                            <constraint firstItem="PI3-6m-d5S" firstAttribute="top" secondItem="HPG-dz-Sbv" secondAttribute="top" id="yD9-ms-vtZ"/>
+                            <constraint firstItem="HPG-dz-Sbv" firstAttribute="leading" secondItem="aAh-uj-KcA" secondAttribute="leading" constant="27" id="yp4-zg-3NJ"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gg_home_line2.png" translatesAutoresizingMaskIntoConstraints="NO" id="APJ-2I-DWo">
+                        <rect key="frame" x="-5" y="85" width="330" height="1"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@天猫周末不加班，总裁被下课" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77a-Jj-7gH">
+                        <rect key="frame" x="25" y="14" width="282" height="16"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                        <color key="textColor" red="0.99607843139999996" green="0.67450980390000004" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="77a-Jj-7gH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="3su-3c-2Cb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="APJ-2I-DWo" secondAttribute="bottom" constant="-7" id="4fj-AB-dHI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="aAh-uj-KcA" secondAttribute="trailing" constant="-8" id="5vt-ob-vrU"/>
+                    <constraint firstItem="77a-Jj-7gH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="17" id="82y-So-9VI"/>
+                    <constraint firstItem="APJ-2I-DWo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-13" id="8az-Lw-281"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="77a-Jj-7gH" secondAttribute="bottom" constant="49" id="fHL-fJ-zCp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="77a-Jj-7gH" secondAttribute="trailing" constant="5" id="gY7-ht-Xdf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="APJ-2I-DWo" secondAttribute="trailing" constant="-13" id="lM9-cn-cAC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aAh-uj-KcA" secondAttribute="bottom" id="mKe-zh-SKA"/>
+                    <constraint firstItem="aAh-uj-KcA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="o7v-Pd-V6e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="commentBtn" destination="4n8-uc-WTc" id="kXd-aq-30g"/>
+                <outlet property="jingHuaLb" destination="77a-Jj-7gH" id="3WW-Oq-Ac7"/>
+                <outlet property="likeBtn" destination="r3M-td-Mxw" id="tLZ-Q9-XJh"/>
+                <outlet property="lineImgv" destination="APJ-2I-DWo" id="8MV-mB-fpT"/>
+                <outlet property="shareBtn" destination="4F4-pY-08p" id="j9j-yC-Y78"/>
+                <outlet property="toolBar" destination="aAh-uj-KcA" id="9E4-U0-RzI"/>
+            </connections>
+            <point key="canvasLocation" x="314" y="327"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="addLikeNormal.png" width="13" height="13"/>
+        <image name="addLikeSeleted.png" width="13" height="13"/>
+        <image name="gg_home_line2.png" width="320" height="1"/>
+        <image name="groupArticleCommentNormal.png" width="13" height="13"/>
+        <image name="groupShareBg.png" width="45" height="21"/>
+        <image name="groupShareNormal.png" width="16" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AttentionCompanyCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4hY-oU-MQY" userLabel="Image logo">
+                        <rect key="frame" x="10" y="10" width="75" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="4sh-MY-Czg"/>
+                            <constraint firstAttribute="width" constant="75" id="c4U-Nt-964"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一览网络股份有限公司" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="207" translatesAutoresizingMaskIntoConstraints="NO" id="8hG-Km-Va0">
+                        <rect key="frame" x="93" y="6" width="207" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Hhb-ce-alX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9u-FZ-zml">
+                        <rect key="frame" x="93" y="44" width="60" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="gh7-sM-p7g"/>
+                            <constraint firstAttribute="width" constant="60" id="rRE-ue-K5G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="取消关注">
+                            <color key="titleColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLT-Lw-IX7" userLabel="View line">
+                        <rect key="frame" x="10" y="73" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ch1-mt-bqG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4hY-oU-MQY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="ASp-m2-lhE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8hG-Km-Va0" secondAttribute="trailing" constant="12" id="EiE-bR-9tz"/>
+                    <constraint firstItem="QLT-Lw-IX7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="Fu0-9y-FKa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QLT-Lw-IX7" secondAttribute="trailing" constant="2" id="HIQ-rN-uWE"/>
+                    <constraint firstItem="8hG-Km-Va0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="QgI-T2-XTQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="QLT-Lw-IX7" secondAttribute="bottom" constant="-8" id="Sre-Ai-YH0"/>
+                    <constraint firstItem="t9u-FZ-zml" firstAttribute="leading" secondItem="8hG-Km-Va0" secondAttribute="leading" id="Wfd-4i-ec8"/>
+                    <constraint firstItem="4hY-oU-MQY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="juA-tp-Dal"/>
+                    <constraint firstItem="t9u-FZ-zml" firstAttribute="top" secondItem="8hG-Km-Va0" secondAttribute="bottom" constant="-2" id="nCg-WW-rUK"/>
+                    <constraint firstItem="8hG-Km-Va0" firstAttribute="leading" secondItem="4hY-oU-MQY" secondAttribute="trailing" constant="8" id="qz4-9n-Zee"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="attentionBtn_" destination="t9u-FZ-zml" id="Jwa-dV-JPK"/>
+                <outlet property="companyNameLb_" destination="8hG-Km-Va0" id="1Ho-Xs-aIS"/>
+                <outlet property="logoPic_" destination="4hY-oU-MQY" id="zmT-dR-rkG"/>
+            </connections>
+            <point key="canvasLocation" x="568" y="277.5"/>
+        </tableViewCell>
+    </objects>
+</document>

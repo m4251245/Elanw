@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PropagandaCtl">
+            <connections>
+                <outlet property="headView_" destination="Lcz-M0-RaL" id="VQv-OK-AZi"/>
+                <outlet property="searchBar" destination="TLZ-PK-Vrx" id="DLf-Kg-Ncn"/>
+                <outlet property="tableViewTopLayout" destination="KtA-vi-sgk" id="F6o-zU-k1b"/>
+                <outlet property="tableView_" destination="shK-vZ-0bJ" id="TUn-k4-uIq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="搜索关键字" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLZ-PK-Vrx">
+                    <rect key="frame" x="0.0" y="-1" width="320" height="44"/>
+                    <color key="barTintColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="shK-vZ-0bJ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lcz-M0-RaL">
+                    <rect key="frame" x="0.0" y="40" width="320" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ZAz-EP-enj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="shK-vZ-0bJ" secondAttribute="trailing" id="3va-iq-rhg"/>
+                <constraint firstItem="Lcz-M0-RaL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="G97-fG-tSF"/>
+                <constraint firstItem="shK-vZ-0bJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KtA-vi-sgk"/>
+                <constraint firstAttribute="trailing" secondItem="Lcz-M0-RaL" secondAttribute="trailing" id="Uzg-FP-mCt"/>
+                <constraint firstItem="TLZ-PK-Vrx" firstAttribute="trailing" secondItem="Lcz-M0-RaL" secondAttribute="trailing" id="ehg-mF-1yO"/>
+                <constraint firstItem="TLZ-PK-Vrx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-1" id="gVr-yO-sfb"/>
+                <constraint firstAttribute="bottom" secondItem="shK-vZ-0bJ" secondAttribute="bottom" id="t2L-s4-JjF"/>
+                <constraint firstItem="shK-vZ-0bJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tgz-KK-OAj"/>
+                <constraint firstItem="Lcz-M0-RaL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="zN3-7a-nRq"/>
+                <constraint firstItem="TLZ-PK-Vrx" firstAttribute="leading" secondItem="Lcz-M0-RaL" secondAttribute="leading" id="ziL-UH-SCX"/>
+            </constraints>
+            <point key="canvasLocation" x="-115" y="126"/>
+        </view>
+    </objects>
+</document>

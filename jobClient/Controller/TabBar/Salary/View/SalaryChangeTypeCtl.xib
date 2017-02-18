@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SalaryChangeTypeCtl">
+            <connections>
+                <outlet property="rigthBtn" destination="j3i-J7-AGK" id="Thg-0K-S2Z"/>
+                <outlet property="tableView_" destination="AHA-ys-n99" id="BOP-PQ-RK0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yinDaoBtn" destination="aMx-1K-Zd8" id="icA-RC-FN7"/>
+                <outlet property="yinDaoPage" destination="2RX-sf-dcg" id="Fp4-ng-EtW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AHA-ys-n99">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="AHA-ys-n99" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U4F-Sf-wcX"/>
+                <constraint firstItem="AHA-ys-n99" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Y1R-f4-TPj"/>
+                <constraint firstAttribute="trailing" secondItem="AHA-ys-n99" secondAttribute="trailing" id="dPa-to-kiC"/>
+                <constraint firstAttribute="bottom" secondItem="AHA-ys-n99" secondAttribute="bottom" id="odQ-0R-EAU"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="203" y="229"/>
+        </view>
+        <view contentMode="scaleToFill" id="2RX-sf-dcg">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_noPost.png" translatesAutoresizingMaskIntoConstraints="NO" id="uo3-3J-uwe">
+                    <rect key="frame" x="54" y="127" width="213" height="179"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="213" id="4xR-cK-RRD"/>
+                        <constraint firstAttribute="height" constant="179" id="Ksn-Uh-5gh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亲，你还没有发过帖哦！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ww-VK-dq5">
+                    <rect key="frame" x="30" y="320" width="258" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="mVz-JP-bwu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMx-1K-Zd8">
+                    <rect key="frame" x="55" y="359" width="210" height="39"/>
+                    <color key="backgroundColor" red="1" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="30L-Ja-WBc"/>
+                        <constraint firstAttribute="width" constant="210" id="r1I-YD-MZe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="现在去发帖">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="rightBarBtnPush:" destination="-1" eventType="touchUpInside" id="nHn-z5-cxy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aMx-1K-Zd8" firstAttribute="centerX" secondItem="uo3-3J-uwe" secondAttribute="centerX" id="1h5-oW-fXn"/>
+                <constraint firstItem="uo3-3J-uwe" firstAttribute="top" secondItem="2RX-sf-dcg" secondAttribute="top" constant="127" id="KqD-gi-HNU"/>
+                <constraint firstItem="7Ww-VK-dq5" firstAttribute="top" secondItem="uo3-3J-uwe" secondAttribute="bottom" constant="14" id="Px1-UC-Nxn"/>
+                <constraint firstItem="uo3-3J-uwe" firstAttribute="centerX" secondItem="2RX-sf-dcg" secondAttribute="centerX" id="Vl3-5I-S22"/>
+                <constraint firstItem="7Ww-VK-dq5" firstAttribute="leading" secondItem="2RX-sf-dcg" secondAttribute="leading" constant="30" id="h1k-gc-sto"/>
+                <constraint firstItem="aMx-1K-Zd8" firstAttribute="top" secondItem="7Ww-VK-dq5" secondAttribute="bottom" constant="10" id="lBJ-32-B6C"/>
+                <constraint firstAttribute="trailing" secondItem="7Ww-VK-dq5" secondAttribute="trailing" constant="32" id="mUa-wV-k94"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="265" y="198"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="j3i-J7-AGK">
+            <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <state key="normal" image="publish_white_new.png">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <connections>
+                <action selector="rightBarBtnPush:" destination="-1" eventType="touchUpInside" id="0gJ-Ym-Fy5"/>
+            </connections>
+            <point key="canvasLocation" x="443" y="315"/>
+        </button>
+    </objects>
+    <resources>
+        <image name="img_noPost.png" width="212" height="179"/>
+        <image name="publish_white_new.png" width="22" height="22"/>
+    </resources>
+</document>

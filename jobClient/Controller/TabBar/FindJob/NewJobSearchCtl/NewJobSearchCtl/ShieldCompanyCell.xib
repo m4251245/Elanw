@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ShieldCompanyCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHr-ut-0XX">
+                        <rect key="frame" x="288" y="12" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Egx-eU-KSb"/>
+                            <constraint firstAttribute="width" constant="22" id="ZHC-MG-pZc"/>
+                        </constraints>
+                        <state key="normal" image="delete.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wv5-Hp-spg">
+                        <rect key="frame" x="15" y="44" width="305" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="CEh-OB-XeX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原来兰网络" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="235" translatesAutoresizingMaskIntoConstraints="NO" id="R8a-KA-0tz">
+                        <rect key="frame" x="16" y="3" width="235" height="40"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Wv5-Hp-spg" secondAttribute="trailing" id="1Gd-LY-Bse"/>
+                    <constraint firstItem="Wv5-Hp-spg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Bb9-Di-UFo"/>
+                    <constraint firstItem="R8a-KA-0tz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="C5E-ih-pc3"/>
+                    <constraint firstItem="R8a-KA-0tz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="L9Q-Bp-wwH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fHr-ut-0XX" secondAttribute="trailing" constant="2" id="M55-eD-4md"/>
+                    <constraint firstItem="fHr-ut-0XX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UAW-OI-Wp8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="R8a-KA-0tz" secondAttribute="bottom" constant="-6" id="eoD-Bg-eAq"/>
+                    <constraint firstAttribute="bottom" secondItem="Wv5-Hp-spg" secondAttribute="bottom" id="u3K-Ig-v2p"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="R8a-KA-0tz" secondAttribute="trailing" constant="61" id="xyu-yy-vPt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="companyNameLb" destination="R8a-KA-0tz" id="mSN-bK-BUy"/>
+                <outlet property="sheidBtn" destination="fHr-ut-0XX" id="3FU-XR-Vxz"/>
+            </connections>
+            <point key="canvasLocation" x="265" y="311"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete.png" width="36" height="36"/>
+    </resources>
+</document>

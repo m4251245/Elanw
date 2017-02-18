@@ -1,0 +1,16 @@
+//
+//  ConditionCtlCell.h
+//  jobClient
+//
+//  Created by 一览iOS on 14-9-3.
+//  Copyright (c) 2014年 YL1001. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ConditionCtlCell : UITableViewCell
+
+@property(nonatomic,weak) IBOutlet UILabel   *typeLb_;
+@property(nonatomic,weak) IBOutlet UILabel   *itemsLb_;
+
+@end

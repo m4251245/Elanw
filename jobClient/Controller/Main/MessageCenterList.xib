@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageCenterList">
+            <connections>
+                <outlet property="addBtn" destination="8mm-p4-aad" id="nCe-Sc-W6e"/>
+                <outlet property="peopleView" destination="Tpv-o9-B11" id="mTu-or-YyU"/>
+                <outlet property="rightBarBtn" destination="cvN-dK-xt9" id="DDo-VK-LEJ"/>
+                <outlet property="tableView_" destination="ugf-Hz-CW9" id="Esw-6G-80h"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ugf-Hz-CW9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ENx-Iy-l7q"/>
+                        <outlet property="delegate" destination="-1" id="fU0-dq-h8o"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ugf-Hz-CW9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Se6-pl-oUS"/>
+                <constraint firstItem="ugf-Hz-CW9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U9l-FQ-7nJ"/>
+                <constraint firstAttribute="bottom" secondItem="ugf-Hz-CW9" secondAttribute="bottom" constant="49" id="V5D-Vw-IPc"/>
+                <constraint firstAttribute="trailing" secondItem="ugf-Hz-CW9" secondAttribute="trailing" id="hmC-LV-aTW"/>
+            </constraints>
+            <point key="canvasLocation" x="-973.5" y="-20.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="Tpv-o9-B11">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvN-dK-xt9">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <state key="normal" image="search_white.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="QfP-7G-GVr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mm-p4-aad">
+                    <rect key="frame" x="42" y="1" width="35" height="38"/>
+                    <state key="normal" image="more_white_new.png"/>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="hLB-8h-e18"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8mm-p4-aad" firstAttribute="leading" secondItem="Tpv-o9-B11" secondAttribute="leading" constant="42" id="HuZ-Zg-bxI"/>
+                <constraint firstItem="cvN-dK-xt9" firstAttribute="leading" secondItem="Tpv-o9-B11" secondAttribute="leading" id="Hzg-kv-T7z"/>
+                <constraint firstAttribute="trailing" secondItem="cvN-dK-xt9" secondAttribute="trailing" constant="40" id="Mk5-Ex-67Z"/>
+                <constraint firstItem="8mm-p4-aad" firstAttribute="top" secondItem="Tpv-o9-B11" secondAttribute="top" constant="1" id="NQM-Av-VOD"/>
+                <constraint firstAttribute="bottom" secondItem="8mm-p4-aad" secondAttribute="bottom" constant="1" id="Ri7-7a-VCx"/>
+                <constraint firstItem="cvN-dK-xt9" firstAttribute="top" secondItem="Tpv-o9-B11" secondAttribute="top" id="aMj-v5-o4A"/>
+                <constraint firstAttribute="trailing" secondItem="8mm-p4-aad" secondAttribute="trailing" constant="3" id="qIN-2m-yvP"/>
+                <constraint firstAttribute="bottom" secondItem="cvN-dK-xt9" secondAttribute="bottom" id="rlE-rv-2Uq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-543" y="-285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="more_white_new.png" width="22" height="22"/>
+        <image name="search_white.png" width="22" height="22"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

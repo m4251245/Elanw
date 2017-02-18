@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YLAddressBookListCtl">
+            <connections>
+                <outlet property="agreeBtn" destination="BKq-4X-Gg3" id="UeP-FJ-tyt"/>
+                <outlet property="declarationBtn" destination="eJl-VS-JC4" id="T8t-Gk-3LM"/>
+                <outlet property="searchBar_" destination="R78-1b-8yD" id="DZ0-D9-XXn"/>
+                <outlet property="searchMoreBtn" destination="sp9-KL-k7y" id="dYu-Ss-PqL"/>
+                <outlet property="searchMoreView" destination="lod-qx-xlB" id="dJD-g7-hMQ"/>
+                <outlet property="tableView_" destination="Gv9-OY-Jf5" id="go2-la-O6o"/>
+                <outlet property="updateBtn" destination="i3H-9c-dbz" id="eIg-Ht-Sxa"/>
+                <outlet property="updateView" destination="AGx-yX-FSN" id="ubv-zZ-Bmq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar hidden="YES" contentMode="redraw" placeholder="搜索" translatesAutoresizingMaskIntoConstraints="NO" id="R78-1b-8yD">
+                    <rect key="frame" x="0.0" y="-1" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="gFu-Yx-oy5"/>
+                    </constraints>
+                    <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gv9-OY-Jf5">
+                    <rect key="frame" x="0.0" y="42" width="320" height="526"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="R78-1b-8yD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4fe-j1-udK"/>
+                <constraint firstAttribute="trailing" secondItem="Gv9-OY-Jf5" secondAttribute="trailing" id="KcQ-eZ-cnj"/>
+                <constraint firstItem="Gv9-OY-Jf5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="42" id="SzA-3K-NAY"/>
+                <constraint firstAttribute="bottom" secondItem="Gv9-OY-Jf5" secondAttribute="bottom" id="Tp7-xr-Dhr"/>
+                <constraint firstItem="R78-1b-8yD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-1" id="ae6-V2-HZQ"/>
+                <constraint firstAttribute="trailing" secondItem="R78-1b-8yD" secondAttribute="trailing" id="cds-BH-t36"/>
+                <constraint firstItem="Gv9-OY-Jf5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xRI-Fp-CsA"/>
+            </constraints>
+            <point key="canvasLocation" x="473" y="351"/>
+        </view>
+        <view contentMode="scaleToFill" id="AGx-yX-FSN">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPH-Gy-hg5">
+                    <rect key="frame" x="18" y="78" width="285" height="312"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addressbookpicture.png" translatesAutoresizingMaskIntoConstraints="NO" id="0jx-bD-rEC">
+                            <rect key="frame" x="25" y="81" width="236" height="90"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="236" id="Z4i-OV-daM"/>
+                                <constraint firstAttribute="height" constant="90" id="jpo-uX-WBc"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传手机通讯录，发掘更多人脉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B23-um-Abg">
+                            <rect key="frame" x="23" y="23" width="238" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="OeN-cy-uEx"/>
+                                <constraint firstAttribute="width" constant="238" id="bpn-k8-6Ns"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3H-9c-dbz">
+                            <rect key="frame" x="38" y="202" width="209" height="30"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="VWi-xV-Ycw"/>
+                                <constraint firstAttribute="width" constant="209" id="efa-Hs-mhr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="上传手机通讯录">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="duv-fp-CWB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKq-4X-Gg3">
+                            <rect key="frame" x="57" y="240" width="110" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="110" id="6L8-yb-C2v"/>
+                                <constraint firstAttribute="height" constant="30" id="WW0-5w-fvt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title=" 我已经阅读并同意" image="addressbookok.png">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="Gql-kk-iBi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJl-VS-JC4">
+                            <rect key="frame" x="168" y="240" width="60" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="1ic-6K-BnO"/>
+                                <constraint firstAttribute="width" constant="60" id="4LM-ra-AnX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="服务声明">
+                                <color key="titleColor" red="0.88235294119999996" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="4ec-nO-TDp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="i3H-9c-dbz" firstAttribute="leading" secondItem="FPH-Gy-hg5" secondAttribute="leading" constant="38" id="150-LJ-yRd"/>
+                        <constraint firstAttribute="width" constant="285" id="5t3-dE-hJC"/>
+                        <constraint firstItem="eJl-VS-JC4" firstAttribute="leading" secondItem="BKq-4X-Gg3" secondAttribute="trailing" constant="1" id="6cu-Bx-42a"/>
+                        <constraint firstItem="BKq-4X-Gg3" firstAttribute="leading" secondItem="FPH-Gy-hg5" secondAttribute="leading" constant="57" id="GNk-tv-xfY"/>
+                        <constraint firstItem="BKq-4X-Gg3" firstAttribute="top" secondItem="i3H-9c-dbz" secondAttribute="bottom" constant="8" id="Lrm-Bs-rse"/>
+                        <constraint firstItem="B23-um-Abg" firstAttribute="leading" secondItem="FPH-Gy-hg5" secondAttribute="leading" constant="23" id="RCI-hm-lF1"/>
+                        <constraint firstItem="0jx-bD-rEC" firstAttribute="leading" secondItem="FPH-Gy-hg5" secondAttribute="leading" constant="25" id="aMb-eH-z5A"/>
+                        <constraint firstAttribute="height" constant="312" id="htc-0F-MQb"/>
+                        <constraint firstItem="B23-um-Abg" firstAttribute="top" secondItem="FPH-Gy-hg5" secondAttribute="top" constant="23" id="hyg-hN-hxq"/>
+                        <constraint firstItem="i3H-9c-dbz" firstAttribute="top" secondItem="0jx-bD-rEC" secondAttribute="bottom" constant="31" id="mhg-ee-Pxz"/>
+                        <constraint firstItem="eJl-VS-JC4" firstAttribute="top" secondItem="i3H-9c-dbz" secondAttribute="bottom" constant="8" id="qy4-BC-iNt"/>
+                        <constraint firstItem="0jx-bD-rEC" firstAttribute="top" secondItem="B23-um-Abg" secondAttribute="bottom" constant="37" id="y0e-tN-tTP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="FPH-Gy-hg5" firstAttribute="centerX" secondItem="AGx-yX-FSN" secondAttribute="centerX" id="X80-av-xS1"/>
+                <constraint firstItem="FPH-Gy-hg5" firstAttribute="centerY" secondItem="AGx-yX-FSN" secondAttribute="centerY" constant="-50" id="vnP-ML-UaF"/>
+            </constraints>
+            <point key="canvasLocation" x="632" y="352"/>
+        </view>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="lod-qx-xlB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_jiantou.png" translatesAutoresizingMaskIntoConstraints="NO" id="rNB-Eg-zCP">
+                    <rect key="frame" x="295" y="13" width="7" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="7" id="PV2-3n-3n2"/>
+                        <constraint firstAttribute="height" constant="13" id="tVE-1A-mw3"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sp9-KL-k7y">
+                    <rect key="frame" x="0.0" y="5" width="414" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="eqM-iL-dgD"/>
+                        <constraint firstAttribute="height" constant="30" id="xKt-OC-KQB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="1"/>
+                    <inset key="imageEdgeInsets" minX="13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="查看更多一览好友" image="companysearchtag.png">
+                        <color key="titleColor" red="1" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="TdW-BY-beM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rNB-Eg-zCP" firstAttribute="centerY" secondItem="lod-qx-xlB" secondAttribute="centerY" id="QB9-W5-5DO"/>
+                <constraint firstItem="sp9-KL-k7y" firstAttribute="top" secondItem="lod-qx-xlB" secondAttribute="top" constant="5" id="aDh-VZ-7eN"/>
+                <constraint firstItem="sp9-KL-k7y" firstAttribute="leading" secondItem="lod-qx-xlB" secondAttribute="leading" id="w7Y-Gt-uVq"/>
+                <constraint firstAttribute="trailing" secondItem="rNB-Eg-zCP" secondAttribute="trailing" constant="18" id="ypY-Ba-0AV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="632" y="724"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="addressbookok.png" width="11" height="11"/>
+        <image name="addressbookpicture.png" width="236" height="89"/>
+        <image name="companysearchtag.png" width="17" height="16"/>
+        <image name="icon_jiantou.png" width="6" height="12"/>
+    </resources>
+</document>

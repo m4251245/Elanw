@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ELGroupIMListCtl">
+            <connections>
+                <outlet property="_msgBackViewHeight" destination="7Yg-jo-oR0" id="57i-FS-EIM"/>
+                <outlet property="_msgCVTrailing" destination="mpC-V2-tvz" id="nW1-Ss-gag"/>
+                <outlet property="_msgContentTVTop" destination="5LS-ts-jGA" id="IR2-s7-vIk"/>
+                <outlet property="_msgContentViewHeight" destination="S8s-uV-N9a" id="DWF-AR-0h4"/>
+                <outlet property="delCopyImgv" destination="jXe-yg-QMA" id="PDR-jR-A45"/>
+                <outlet property="faceBtn" destination="Nkp-wC-kjC" id="Pi6-8I-lSt"/>
+                <outlet property="msgBackView" destination="1Kg-LE-gcB" id="W4A-hx-FXl"/>
+                <outlet property="msgContentTV" destination="pKa-aK-VgR" id="YHU-3z-pvE"/>
+                <outlet property="msgContentView" destination="pja-UR-LeS" id="KGo-0u-3rz"/>
+                <outlet property="sendBtn" destination="3OE-Rl-3c8" id="9Ea-ZA-h1Z"/>
+                <outlet property="shareAddBtn" destination="IV1-He-M6K" id="j1q-WE-Evo"/>
+                <outlet property="shareAddView" destination="KVd-Jg-Hs5" id="AR8-ny-gjs"/>
+                <outlet property="tableView_" destination="LEf-KQ-63D" id="0vq-PI-Jcd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="voiceMessageBtn" destination="n1X-9P-B5f" id="nYb-nl-MO5"/>
+                <outlet property="voicelb" destination="c9C-bi-u8O" id="N10-vx-7YI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="LEf-KQ-63D">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pja-UR-LeS">
+                    <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gg_home_line2.png" translatesAutoresizingMaskIntoConstraints="NO" id="6wA-Vu-X5r">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="WwP-Db-R5f"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1X-9P-B5f">
+                            <rect key="frame" x="0.0" y="2" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="Fbb-vO-d2d"/>
+                                <constraint firstAttribute="height" constant="35" id="yLS-jd-dKf"/>
+                            </constraints>
+                            <state key="normal" image="ToolViewInputVoice.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="ToolViewKeyboard.png"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="j8n-s0-gNd"/>
+                            </connections>
+                        </button>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Kg-LE-gcB">
+                            <rect key="frame" x="35" y="5" width="260" height="30"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKa-aK-VgR">
+                                    <rect key="frame" x="0.0" y="0.0" width="260" height="84"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="84" id="Syf-Sd-m4X"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="pKa-aK-VgR" firstAttribute="leading" secondItem="1Kg-LE-gcB" secondAttribute="leading" id="1GX-RX-n4N"/>
+                                <constraint firstItem="pKa-aK-VgR" firstAttribute="top" secondItem="1Kg-LE-gcB" secondAttribute="top" id="5LS-ts-jGA"/>
+                                <constraint firstAttribute="height" constant="30" id="7Yg-jo-oR0"/>
+                                <constraint firstAttribute="trailing" secondItem="pKa-aK-VgR" secondAttribute="trailing" id="csE-ed-4FH"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkp-wC-kjC">
+                            <rect key="frame" x="303" y="2" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="FEo-Dw-bu3"/>
+                                <constraint firstAttribute="height" constant="35" id="g3B-on-6ja"/>
+                            </constraints>
+                            <state key="normal" image="ToolViewEmotion.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="ToolViewKeyboard.png"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="K88-7w-zBh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IV1-He-M6K">
+                            <rect key="frame" x="338" y="2" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="LAv-Rv-kfV"/>
+                            </constraints>
+                            <state key="normal" image="TypeSelectorBtn_Black.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="ToolViewKeyboard.png"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="qrC-xx-AHK"/>
+                            </connections>
+                        </button>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="按住 说话" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9C-bi-u8O">
+                            <rect key="frame" x="35" y="5" width="260" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gg_home_line2.png" translatesAutoresizingMaskIntoConstraints="NO" id="1k2-l2-cxB">
+                            <rect key="frame" x="0.0" y="39" width="375" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="46i-zJ-nm5"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="IV1-He-M6K" firstAttribute="top" secondItem="Nkp-wC-kjC" secondAttribute="top" id="27M-8j-uf3"/>
+                        <constraint firstItem="1Kg-LE-gcB" firstAttribute="top" secondItem="pja-UR-LeS" secondAttribute="top" constant="5" id="2pK-nc-slz"/>
+                        <constraint firstItem="IV1-He-M6K" firstAttribute="top" secondItem="6wA-Vu-X5r" secondAttribute="bottom" constant="1" id="9XN-YR-KJL"/>
+                        <constraint firstAttribute="bottom" secondItem="1k2-l2-cxB" secondAttribute="bottom" id="GYm-Ry-4p5"/>
+                        <constraint firstAttribute="bottom" secondItem="c9C-bi-u8O" secondAttribute="bottom" constant="5" id="HAm-kV-Lig"/>
+                        <constraint firstItem="6wA-Vu-X5r" firstAttribute="top" secondItem="pja-UR-LeS" secondAttribute="top" id="JbR-BA-Fer"/>
+                        <constraint firstItem="c9C-bi-u8O" firstAttribute="trailing" secondItem="Nkp-wC-kjC" secondAttribute="leading" constant="-8" id="KqI-8x-CUt"/>
+                        <constraint firstItem="c9C-bi-u8O" firstAttribute="leading" secondItem="n1X-9P-B5f" secondAttribute="trailing" id="RNw-ks-zfI"/>
+                        <constraint firstAttribute="height" constant="40" id="S8s-uV-N9a"/>
+                        <constraint firstItem="Nkp-wC-kjC" firstAttribute="trailing" secondItem="IV1-He-M6K" secondAttribute="leading" id="Sry-tI-MfW"/>
+                        <constraint firstItem="1Kg-LE-gcB" firstAttribute="trailing" secondItem="Nkp-wC-kjC" secondAttribute="leading" constant="-8" id="V8L-ci-rge"/>
+                        <constraint firstItem="1Kg-LE-gcB" firstAttribute="leading" secondItem="n1X-9P-B5f" secondAttribute="trailing" id="arX-VT-XcJ"/>
+                        <constraint firstItem="n1X-9P-B5f" firstAttribute="leading" secondItem="pja-UR-LeS" secondAttribute="leading" id="f4l-AH-dhF"/>
+                        <constraint firstAttribute="trailing" secondItem="1k2-l2-cxB" secondAttribute="trailing" id="lTE-Cp-uFR"/>
+                        <constraint firstItem="6wA-Vu-X5r" firstAttribute="leading" secondItem="n1X-9P-B5f" secondAttribute="leading" id="muq-pm-Swo"/>
+                        <constraint firstItem="Nkp-wC-kjC" firstAttribute="top" secondItem="n1X-9P-B5f" secondAttribute="top" id="pK4-0d-Hhd"/>
+                        <constraint firstItem="c9C-bi-u8O" firstAttribute="top" secondItem="pja-UR-LeS" secondAttribute="top" constant="5" id="tIR-9d-aIK"/>
+                        <constraint firstAttribute="trailing" secondItem="IV1-He-M6K" secondAttribute="trailing" constant="2" id="uR4-CJ-u5j"/>
+                        <constraint firstItem="1k2-l2-cxB" firstAttribute="leading" secondItem="pja-UR-LeS" secondAttribute="leading" id="xHO-7L-exK"/>
+                        <constraint firstItem="6wA-Vu-X5r" firstAttribute="trailing" secondItem="1k2-l2-cxB" secondAttribute="trailing" id="z9e-M5-Kvr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pja-UR-LeS" secondAttribute="trailing" id="C0t-vt-wtT"/>
+                <constraint firstAttribute="trailing" secondItem="LEf-KQ-63D" secondAttribute="trailing" id="PbB-uv-Mfl"/>
+                <constraint firstItem="pja-UR-LeS" firstAttribute="top" secondItem="LEf-KQ-63D" secondAttribute="bottom" id="UeT-Od-0Le"/>
+                <constraint firstItem="LEf-KQ-63D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="huB-ED-Lbm"/>
+                <constraint firstItem="LEf-KQ-63D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iTr-Ae-zyr"/>
+                <constraint firstItem="pja-UR-LeS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jm5-v1-mR4"/>
+                <constraint firstAttribute="bottom" secondItem="pja-UR-LeS" secondAttribute="bottom" id="mpC-V2-tvz"/>
+            </constraints>
+            <point key="canvasLocation" x="-496" y="42"/>
+        </view>
+        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="msg_copy.png" id="jXe-yg-QMA">
+            <rect key="frame" x="0.0" y="0.0" width="63" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <point key="canvasLocation" x="-193" y="-264"/>
+        </imageView>
+        <view contentMode="scaleToFill" id="KVd-Jg-Hs5">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="340" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guh-jY-nK3">
+                    <rect key="frame" x="27" y="21" width="46" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="message_takePicture">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="shareAddBtnRespone:" destination="-1" eventType="touchUpInside" id="Aw8-qi-1gM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" tag="540" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="拍照" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dps-Fi-s9E">
+                    <rect key="frame" x="27" y="73" width="46" height="11"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="341" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHe-FM-bKw">
+                    <rect key="frame" x="100" y="21" width="46" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="message_pictures">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="shareAddBtnRespone:" destination="-1" eventType="touchUpInside" id="hh7-QN-TG6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" tag="541" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="图片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXO-I1-gGF">
+                    <rect key="frame" x="101" y="73" width="46" height="11"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-95" y="-128"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3OE-Rl-3c8">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="25"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.88235294117647056" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <state key="normal" title="发送">
+                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <connections>
+                <action selector="sendMsgBtnClick:" destination="-1" eventType="touchUpInside" id="SDB-vJ-dFS"/>
+            </connections>
+            <point key="canvasLocation" x="870" y="242"/>
+        </button>
+        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gGl-gm-Lz9">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <state key="normal" title="按住说话">
+                <color key="titleColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <state key="highlighted" title="松开结束">
+                <color key="titleColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <point key="canvasLocation" x="-134" y="169"/>
+        </button>
+    </objects>
+    <resources>
+        <image name="ToolViewEmotion.png" width="35" height="35"/>
+        <image name="ToolViewInputVoice.png" width="35" height="35"/>
+        <image name="ToolViewKeyboard.png" width="35" height="35"/>
+        <image name="TypeSelectorBtn_Black.png" width="35" height="35"/>
+        <image name="gg_home_line2.png" width="320" height="1"/>
+        <image name="message_pictures" width="46" height="46"/>
+        <image name="message_takePicture" width="46" height="46"/>
+        <image name="msg_copy.png" width="63" height="45"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

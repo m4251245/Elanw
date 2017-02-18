@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YLOfferListCtlCell" id="KGk-i7-Jjw" customClass="YLOfferListCtlCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view tag="170" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igc-IG-or6">
+                        <rect key="frame" x="10" y="11" width="76" height="48"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="171" contentMode="left" text="星期一" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" preferredMaxLayoutWidth="76" translatesAutoresizingMaskIntoConstraints="NO" id="3zf-bl-9vT">
+                                <rect key="frame" x="0.0" y="0.0" width="76" height="16"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="bHo-Q3-DyL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                <color key="textColor" red="0.39781021900000002" green="0.39781021900000002" blue="0.39781021900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="172" contentMode="left" text="星期一" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3fT-pI-e4f">
+                                <rect key="frame" x="0.0" y="16" width="76" height="16"/>
+                                <color key="backgroundColor" red="0.23921568627450979" green="0.69019607843137254" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="hTH-HE-36p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="102" contentMode="left" text="PM 14:00:15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6e-je-4hO">
+                                <rect key="frame" x="0.0" y="32" width="76" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i6e-je-4hO" firstAttribute="leading" secondItem="igc-IG-or6" secondAttribute="leading" id="4ok-Nl-7rs"/>
+                            <constraint firstAttribute="height" constant="48" id="Bc3-HF-Yiw"/>
+                            <constraint firstAttribute="trailing" secondItem="3fT-pI-e4f" secondAttribute="trailing" id="I6H-ne-VSA"/>
+                            <constraint firstItem="3zf-bl-9vT" firstAttribute="top" secondItem="igc-IG-or6" secondAttribute="top" id="Mzn-Yq-hIX"/>
+                            <constraint firstItem="3fT-pI-e4f" firstAttribute="top" secondItem="3zf-bl-9vT" secondAttribute="bottom" id="QN7-0W-7Da"/>
+                            <constraint firstItem="i6e-je-4hO" firstAttribute="top" secondItem="3fT-pI-e4f" secondAttribute="bottom" id="X5w-Dz-gYV"/>
+                            <constraint firstAttribute="trailing" secondItem="i6e-je-4hO" secondAttribute="trailing" id="Y08-8e-s5f"/>
+                            <constraint firstAttribute="bottom" secondItem="i6e-je-4hO" secondAttribute="bottom" id="ZJg-lD-DBe"/>
+                            <constraint firstItem="3fT-pI-e4f" firstAttribute="leading" secondItem="igc-IG-or6" secondAttribute="leading" id="aju-qR-I3Q"/>
+                            <constraint firstAttribute="width" constant="76" id="hy1-9x-TkY"/>
+                            <constraint firstAttribute="trailing" secondItem="3zf-bl-9vT" secondAttribute="trailing" id="jA3-8b-oPt"/>
+                            <constraint firstItem="3zf-bl-9vT" firstAttribute="leading" secondItem="igc-IG-or6" secondAttribute="leading" id="yFz-4S-pYd"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GfJ-qA-tdl">
+                        <rect key="frame" x="66" y="7" width="25" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="0Dh-9y-jLy"/>
+                            <constraint firstAttribute="width" constant="25" id="q9F-cb-5uR"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_jiantou.png" translatesAutoresizingMaskIntoConstraints="NO" id="ehJ-bg-AVx">
+                        <rect key="frame" x="305" y="30" width="7" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="7" id="XP6-oi-5pY"/>
+                            <constraint firstAttribute="height" constant="13" id="qlx-WT-2Zu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="广东外语外贸大学" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygz-Rb-t9q">
+                        <rect key="frame" x="94" y="46" width="208" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="BPJ-pK-R51"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" text="广东外语外贸大学广东外语外" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="208" translatesAutoresizingMaskIntoConstraints="NO" id="c9Z-f1-ak4">
+                        <rect key="frame" x="94" y="6" width="208" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="HAu-o6-OQW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gg_home_line2.png" translatesAutoresizingMaskIntoConstraints="NO" id="pjP-Lk-PoZ">
+                        <rect key="frame" x="-10" y="68" width="330" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hfc-Dt-Yh4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="广东外语外贸大学" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmL-Re-pbZ">
+                        <rect key="frame" x="94" y="29" width="208" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="bXc-Aa-Qee"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dmL-Re-pbZ" firstAttribute="leading" secondItem="c9Z-f1-ak4" secondAttribute="leading" id="0TM-eI-vMZ"/>
+                    <constraint firstItem="pjP-Lk-PoZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-18" id="3yr-h2-U48"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pjP-Lk-PoZ" secondAttribute="trailing" constant="-8" id="4CC-Cf-cUi"/>
+                    <constraint firstItem="ygz-Rb-t9q" firstAttribute="top" secondItem="dmL-Re-pbZ" secondAttribute="bottom" constant="2" id="66w-eu-yPv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ehJ-bg-AVx" secondAttribute="trailing" id="DzB-az-4gh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="c9Z-f1-ak4" secondAttribute="trailing" constant="10" id="L1m-cs-CLJ"/>
+                    <constraint firstItem="ehJ-bg-AVx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="22" id="Rhv-OC-Um9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dmL-Re-pbZ" secondAttribute="trailing" constant="10" id="TmA-C3-lCZ"/>
+                    <constraint firstItem="c9Z-f1-ak4" firstAttribute="leading" secondItem="igc-IG-or6" secondAttribute="trailing" constant="8" id="eB7-If-p5P"/>
+                    <constraint firstItem="c9Z-f1-ak4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="eu8-A8-scp"/>
+                    <constraint firstItem="ygz-Rb-t9q" firstAttribute="leading" secondItem="c9Z-f1-ak4" secondAttribute="leading" id="euZ-xs-7Ea"/>
+                    <constraint firstItem="GfJ-qA-tdl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="58" id="ghm-GV-wGK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="pjP-Lk-PoZ" secondAttribute="bottom" constant="-8" id="iCv-BJ-50v"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ygz-Rb-t9q" secondAttribute="trailing" constant="10" id="oWT-Ay-PRS"/>
+                    <constraint firstItem="GfJ-qA-tdl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="q82-w3-0aD"/>
+                    <constraint firstItem="igc-IG-or6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="tfC-Oe-FUM"/>
+                    <constraint firstItem="dmL-Re-pbZ" firstAttribute="top" secondItem="c9Z-f1-ak4" secondAttribute="bottom" id="uge-Di-70W"/>
+                    <constraint firstItem="igc-IG-or6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="ysg-ur-70h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="address" destination="ygz-Rb-t9q" id="0c5-uS-GWS"/>
+                <outlet property="dateLb" destination="3fT-pI-e4f" id="nHa-bv-njd"/>
+                <outlet property="job" destination="dmL-Re-pbZ" id="GRT-3F-XMQ"/>
+                <outlet property="lineImage" destination="pjP-Lk-PoZ" id="Rjf-Th-bqW"/>
+                <outlet property="lineImageLeftWidth" destination="3yr-h2-U48" id="Stg-2s-1NH"/>
+                <outlet property="rightImage" destination="ehJ-bg-AVx" id="awI-nw-eA4"/>
+                <outlet property="startTimeLb" destination="i6e-je-4hO" id="0tG-D4-v9v"/>
+                <outlet property="statuImgv" destination="GfJ-qA-tdl" id="KHU-Fj-csB"/>
+                <outlet property="timeBackView" destination="igc-IG-or6" id="JQZ-9q-bqf"/>
+                <outlet property="timeBackViewLeftWidth" destination="tfC-Oe-FUM" id="lKo-ti-SoH"/>
+                <outlet property="title" destination="c9Z-f1-ak4" id="OCP-NR-hIl"/>
+                <outlet property="weekLb" destination="3zf-bl-9vT" id="uOg-Fp-KII"/>
+            </connections>
+            <point key="canvasLocation" x="336" y="278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gg_home_line2.png" width="320" height="1"/>
+        <image name="icon_jiantou.png" width="6" height="12"/>
+    </resources>
+</document>

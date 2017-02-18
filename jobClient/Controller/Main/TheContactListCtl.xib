@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TheContactListCtl">
+            <connections>
+                <outlet property="myRightBarBtnItem_" destination="GXn-Ot-OeR" id="brd-Jc-Xhk"/>
+                <outlet property="searchBar" destination="tss-zK-KpK" id="dvj-Rs-nQD"/>
+                <outlet property="sureBtn" destination="Rc7-QS-iJh" id="bup-kf-JFK"/>
+                <outlet property="tableView_" destination="icC-Ch-DRz" id="qee-eB-RhC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" text="" placeholder="姓名/手机号/账号/邮箱" translatesAutoresizingMaskIntoConstraints="NO" id="tss-zK-KpK">
+                    <rect key="frame" x="0.0" y="-1" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="8Jb-yP-uKO"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="icC-Ch-DRz">
+                    <rect key="frame" x="0.0" y="42" width="375" height="625"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="icC-Ch-DRz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3H3-JR-mOw"/>
+                <constraint firstAttribute="trailing" secondItem="icC-Ch-DRz" secondAttribute="trailing" id="6pW-Du-epK"/>
+                <constraint firstAttribute="bottom" secondItem="icC-Ch-DRz" secondAttribute="bottom" id="OMj-hX-ahH"/>
+                <constraint firstItem="tss-zK-KpK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-1" id="PUx-vh-Fde"/>
+                <constraint firstItem="tss-zK-KpK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WQr-KN-R37"/>
+                <constraint firstAttribute="trailing" secondItem="tss-zK-KpK" secondAttribute="trailing" id="d7t-Hg-ESG"/>
+                <constraint firstItem="icC-Ch-DRz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="42" id="mrW-fZ-op7"/>
+            </constraints>
+            <point key="canvasLocation" x="-1023" y="-66"/>
+        </view>
+        <view contentMode="scaleToFill" id="GXn-Ot-OeR">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rc7-QS-iJh">
+                    <rect key="frame" x="-3" y="5" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.95294117647058818" green="0.70588235294117641" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sureClick:" destination="-1" eventType="touchUpInside" id="Ldh-UM-2Sw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-760" y="-3"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

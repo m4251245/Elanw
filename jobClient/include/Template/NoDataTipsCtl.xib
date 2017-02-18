@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoDataTipsCtl">
+            <connections>
+                <outlet property="imageView" destination="NwJ-XB-X0J" id="Anp-0f-5CM"/>
+                <outlet property="titleLb" destination="8W4-rd-PWE" id="Hf3-dr-0Rj"/>
+                <outlet property="view" destination="G7S-8O-SRW" id="xCO-2C-diC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="G7S-8O-SRW">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_noData.png" translatesAutoresizingMaskIntoConstraints="NO" id="NwJ-XB-X0J">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="179" id="013-Sz-Ku2"/>
+                        <constraint firstAttribute="width" constant="213" id="pTG-Fv-HTR"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="企业已就位，请随时关注更新" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W4-rd-PWE">
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8W4-rd-PWE" secondAttribute="trailing" constant="30" id="MXq-kc-WvJ"/>
+                <constraint firstItem="NwJ-XB-X0J" firstAttribute="centerX" secondItem="G7S-8O-SRW" secondAttribute="centerX" id="m1b-c9-RTp"/>
+                <constraint firstItem="8W4-rd-PWE" firstAttribute="top" secondItem="NwJ-XB-X0J" secondAttribute="bottom" constant="14" id="tvE-Xy-VEY"/>
+                <constraint firstItem="NwJ-XB-X0J" firstAttribute="top" secondItem="G7S-8O-SRW" secondAttribute="top" constant="128" id="uA9-g6-X5e"/>
+                <constraint firstItem="8W4-rd-PWE" firstAttribute="leading" secondItem="G7S-8O-SRW" secondAttribute="leading" constant="30" id="x0j-iF-2jh"/>
+            </constraints>
+            <point key="canvasLocation" x="-113" y="130"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_noData.png" width="212" height="179"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

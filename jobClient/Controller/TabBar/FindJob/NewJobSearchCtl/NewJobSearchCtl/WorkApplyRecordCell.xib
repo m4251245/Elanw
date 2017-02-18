@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="143" id="UYB-at-Lgz" customClass="WorkApplyRecordCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UYB-at-Lgz" id="w2L-CA-p7W">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UI设计师" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IY-mo-nKl">
+                        <rect key="frame" x="17" y="13" width="278" height="21"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apply_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dei-Vx-6Ro">
+                        <rect key="frame" x="323" y="-1" width="52" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="52" id="nha-Vd-sZr"/>
+                            <constraint firstAttribute="width" constant="52" id="qGH-yt-6Tr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="深圳市一览网络股份有限公司" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFB-pK-MPo">
+                        <rect key="frame" x="16" y="39" width="301" height="20"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                        <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-06-05 17:20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fg-XC-s0J">
+                        <rect key="frame" x="16" y="64" width="218" height="20"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Emn-YE-tFB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
+                        <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pW6-yL-ZBk">
+                        <rect key="frame" x="15" y="96" width="360" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92941176470588238" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="DrQ-uY-N9O"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="5fg-XC-s0J" secondAttribute="trailing" constant="133" id="08z-cm-9et"/>
+                    <constraint firstItem="5fg-XC-s0J" firstAttribute="top" secondItem="DFB-pK-MPo" secondAttribute="bottom" constant="5" id="1gT-XT-iuS"/>
+                    <constraint firstItem="DFB-pK-MPo" firstAttribute="leading" secondItem="w2L-CA-p7W" secondAttribute="leadingMargin" constant="8" id="26z-lb-Gy8"/>
+                    <constraint firstItem="Dei-Vx-6Ro" firstAttribute="top" secondItem="w2L-CA-p7W" secondAttribute="topMargin" constant="-9" id="FnN-Cw-SbJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pW6-yL-ZBk" secondAttribute="trailing" constant="-8" id="Mrx-ir-Y6v"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="pW6-yL-ZBk" secondAttribute="bottom" constant="-8" id="O5h-B7-9Z1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="DFB-pK-MPo" secondAttribute="trailing" constant="50" id="X6i-32-91C"/>
+                    <constraint firstItem="pW6-yL-ZBk" firstAttribute="leading" secondItem="w2L-CA-p7W" secondAttribute="leadingMargin" constant="7" id="bCK-Og-eGI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9IY-mo-nKl" secondAttribute="trailing" constant="72" id="e4m-7Q-tnU"/>
+                    <constraint firstItem="5fg-XC-s0J" firstAttribute="leading" secondItem="DFB-pK-MPo" secondAttribute="leading" id="eqe-vr-OLy"/>
+                    <constraint firstItem="DFB-pK-MPo" firstAttribute="top" secondItem="9IY-mo-nKl" secondAttribute="bottom" constant="5" id="gNa-F0-0vK"/>
+                    <constraint firstItem="9IY-mo-nKl" firstAttribute="leading" secondItem="w2L-CA-p7W" secondAttribute="leadingMargin" constant="9" id="h0d-1t-ZeO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Dei-Vx-6Ro" secondAttribute="trailing" constant="-8" id="j1R-fh-MiE"/>
+                    <constraint firstItem="9IY-mo-nKl" firstAttribute="top" secondItem="w2L-CA-p7W" secondAttribute="topMargin" constant="5" id="wmI-Ei-fPh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ZWlabel_" destination="9IY-mo-nKl" id="SRw-Xd-FWg"/>
+                <outlet property="applyTime_" destination="5fg-XC-s0J" id="jaD-Qv-Yqp"/>
+                <outlet property="companyNameLb_" destination="DFB-pK-MPo" id="Hmi-84-fZ2"/>
+                <outlet property="statusImg" destination="Dei-Vx-6Ro" id="jI9-rU-7oY"/>
+            </connections>
+            <point key="canvasLocation" x="3.5" y="239"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="apply_01.png" width="104" height="104"/>
+    </resources>
+</document>

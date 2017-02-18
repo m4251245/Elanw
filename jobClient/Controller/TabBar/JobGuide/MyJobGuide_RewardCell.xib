@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2064" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyJobGuide_RewardCell" rowHeight="167" id="KGk-i7-Jjw" customClass="MyJobGuide_RewardCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="answer_back_ad_image" translatesAutoresizingMaskIntoConstraints="NO" id="V8y-02-Erc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MM5-0m-h0W">
+                        <rect key="frame" x="95" y="105" width="130" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测测测测测测测测岔路口尽量简单就安静按设计的绿卡的离开家阿里啊实打实的" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJ3-ZY-uDK">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bJ3-ZY-uDK" firstAttribute="top" secondItem="MM5-0m-h0W" secondAttribute="top" id="GNW-EP-tfy"/>
+                            <constraint firstAttribute="trailing" secondItem="bJ3-ZY-uDK" secondAttribute="trailing" id="IHQ-e2-7Kl"/>
+                            <constraint firstItem="bJ3-ZY-uDK" firstAttribute="leading" secondItem="MM5-0m-h0W" secondAttribute="leading" id="LUs-7U-Gge"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MM5-0m-h0W" firstAttribute="height" secondItem="V8y-02-Erc" secondAttribute="height" multiplier="60:164" id="25Q-zW-wwK"/>
+                    <constraint firstItem="V8y-02-Erc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ISG-ad-Mgv"/>
+                    <constraint firstAttribute="trailing" secondItem="V8y-02-Erc" secondAttribute="trailing" id="ZHc-OB-1vw"/>
+                    <constraint firstItem="V8y-02-Erc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="be8-Qe-dEX"/>
+                    <constraint firstAttribute="bottom" secondItem="MM5-0m-h0W" secondAttribute="bottom" id="c4c-iD-K0v"/>
+                    <constraint firstAttribute="bottom" secondItem="V8y-02-Erc" secondAttribute="bottom" id="gqY-N1-LsE"/>
+                    <constraint firstItem="MM5-0m-h0W" firstAttribute="width" secondItem="V8y-02-Erc" secondAttribute="width" multiplier="130:320" id="twA-0x-e9y"/>
+                    <constraint firstItem="MM5-0m-h0W" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="u3c-mi-pVJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="contentLb" destination="bJ3-ZY-uDK" id="bmv-sG-ora"/>
+            </connections>
+            <point key="canvasLocation" x="359" y="343.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="answer_back_ad_image" width="375" height="158"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

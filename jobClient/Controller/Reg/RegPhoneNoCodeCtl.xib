@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegPhoneNoCodeCtl">
+            <connections>
+                <outlet property="pwdTF" destination="4eI-Y0-sP1" id="YgB-4k-IdN"/>
+                <outlet property="registBtn" destination="3jg-2R-FcY" id="Hjz-wp-e72"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ye-iR-cxh" userLabel="View2">
+                    <rect key="frame" x="20" y="60" width="335" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入6-20位密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4eI-Y0-sP1">
+                            <rect key="frame" x="0.0" y="0.0" width="310" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJJ-wd-SxX">
+                            <rect key="frame" x="0.0" y="43" width="335" height="1"/>
+                            <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="sdO-Jv-7bR"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU1-yd-RaW">
+                            <rect key="frame" x="310" y="0.0" width="25" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="0sN-bX-c8Q"/>
+                            </constraints>
+                            <state key="normal" image="code_nosee.png"/>
+                            <connections>
+                                <action selector="passWordBtnRespone:" destination="-1" eventType="touchUpInside" id="fba-uK-FET"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="bU1-yd-RaW" firstAttribute="top" secondItem="5ye-iR-cxh" secondAttribute="top" id="Nzj-Z4-2J2"/>
+                        <constraint firstAttribute="bottom" secondItem="fJJ-wd-SxX" secondAttribute="bottom" id="S2l-2D-hYq"/>
+                        <constraint firstItem="fJJ-wd-SxX" firstAttribute="leading" secondItem="5ye-iR-cxh" secondAttribute="leading" id="VQW-ci-yHF"/>
+                        <constraint firstAttribute="bottom" secondItem="4eI-Y0-sP1" secondAttribute="bottom" id="VRu-sm-6Yz"/>
+                        <constraint firstAttribute="bottom" secondItem="bU1-yd-RaW" secondAttribute="bottom" id="Vds-g6-Dzx"/>
+                        <constraint firstItem="4eI-Y0-sP1" firstAttribute="top" secondItem="5ye-iR-cxh" secondAttribute="top" id="YfO-zp-pis"/>
+                        <constraint firstItem="bU1-yd-RaW" firstAttribute="leading" secondItem="4eI-Y0-sP1" secondAttribute="trailing" id="dBP-WX-H7l"/>
+                        <constraint firstItem="4eI-Y0-sP1" firstAttribute="leading" secondItem="5ye-iR-cxh" secondAttribute="leading" id="dHz-5X-Kcf"/>
+                        <constraint firstAttribute="trailing" secondItem="bU1-yd-RaW" secondAttribute="trailing" id="s0B-u0-Lbu"/>
+                        <constraint firstAttribute="trailing" secondItem="fJJ-wd-SxX" secondAttribute="trailing" id="uqA-WO-v9b"/>
+                        <constraint firstAttribute="height" constant="44" id="x6k-bg-PpV"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jg-2R-FcY">
+                    <rect key="frame" x="20" y="134" width="335" height="45"/>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.33725490196078434" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="0iZ-rn-F9l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="注册">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="m1j-1l-S2x"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5ye-iR-cxh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="6JL-7k-UsC"/>
+                <constraint firstAttribute="trailing" secondItem="5ye-iR-cxh" secondAttribute="trailing" constant="20" id="DSu-dK-szC"/>
+                <constraint firstItem="3jg-2R-FcY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="ZbD-Dl-uid"/>
+                <constraint firstItem="3jg-2R-FcY" firstAttribute="top" secondItem="5ye-iR-cxh" secondAttribute="bottom" constant="30" id="cVT-EM-ttE"/>
+                <constraint firstItem="5ye-iR-cxh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="fBP-KN-RbT"/>
+                <constraint firstAttribute="trailing" secondItem="3jg-2R-FcY" secondAttribute="trailing" constant="20" id="j0w-B0-vZp"/>
+            </constraints>
+            <point key="canvasLocation" x="559.5" y="311.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="code_nosee.png" width="22" height="22"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

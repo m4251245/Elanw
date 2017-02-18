@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AssociationDetailCtl">
+            <connections>
+                <outlet property="noArticleView_" destination="fjN-Gi-UqM" id="Qzu-lI-SV9"/>
+                <outlet property="publishBtn" destination="q0u-fq-ASJ" id="8dK-L0-rcf"/>
+                <outlet property="searchDisplayController" destination="oB0-dY-bef" id="xRU-Cm-uDL"/>
+                <outlet property="tableView_" destination="ktJ-BR-kc7" id="X97-OV-vUf"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ktJ-BR-kc7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="X2H-SI-wGu"/>
+                        <outlet property="delegate" destination="-1" id="4BE-e4-zNS"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0u-fq-ASJ">
+                    <rect key="frame" x="295" y="550" width="66" height="66"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="66" id="R0q-tK-NcR"/>
+                        <constraint firstAttribute="height" constant="66" id="qd8-2x-CeW"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="groups_public.png"/>
+                    <connections>
+                        <action selector="publishArticleBtnRespone:" destination="-1" eventType="touchUpInside" id="k6P-L8-bnc"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjN-Gi-UqM">
+                    <rect key="frame" x="0.0" y="220.5" width="375" height="226"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_noData.png" translatesAutoresizingMaskIntoConstraints="NO" id="CMv-ow-OgC">
+                            <rect key="frame" x="81" y="0.0" width="213" height="179"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="213" id="8wE-CQ-Mfk"/>
+                                <constraint firstAttribute="height" constant="179" id="95H-9n-2DQ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="社群还没有话题发表噢！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oi-Fz-uDb">
+                            <rect key="frame" x="8" y="185" width="359" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="YsC-52-9Wg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="CMv-ow-OgC" firstAttribute="centerX" secondItem="fjN-Gi-UqM" secondAttribute="centerX" id="22q-08-BrI"/>
+                        <constraint firstItem="2Oi-Fz-uDb" firstAttribute="top" secondItem="CMv-ow-OgC" secondAttribute="bottom" constant="6" id="HhN-IL-q7I"/>
+                        <constraint firstItem="2Oi-Fz-uDb" firstAttribute="leading" secondItem="fjN-Gi-UqM" secondAttribute="leading" constant="8" id="M7e-NM-GEU"/>
+                        <constraint firstItem="CMv-ow-OgC" firstAttribute="top" secondItem="fjN-Gi-UqM" secondAttribute="top" id="WLp-Dh-39Z"/>
+                        <constraint firstAttribute="height" constant="226" id="WlH-lZ-GWz"/>
+                        <constraint firstAttribute="trailing" secondItem="2Oi-Fz-uDb" secondAttribute="trailing" constant="8" id="bgd-TD-ioS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ktJ-BR-kc7" firstAttribute="top" secondItem="1" secondAttribute="top" id="604-n7-zdF"/>
+                <constraint firstItem="fjN-Gi-UqM" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="7Pw-KO-dob"/>
+                <constraint firstAttribute="bottom" secondItem="ktJ-BR-kc7" secondAttribute="bottom" id="E3v-N8-puj"/>
+                <constraint firstItem="fjN-Gi-UqM" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="Xoa-l0-xvu"/>
+                <constraint firstAttribute="trailing" secondItem="ktJ-BR-kc7" secondAttribute="trailing" id="asG-wk-OQp"/>
+                <constraint firstAttribute="trailing" secondItem="q0u-fq-ASJ" secondAttribute="trailing" constant="14" id="bFF-6i-C5e"/>
+                <constraint firstItem="fjN-Gi-UqM" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="enS-Ig-W1A"/>
+                <constraint firstAttribute="bottom" secondItem="q0u-fq-ASJ" secondAttribute="bottom" constant="51" id="kMr-jl-jHY"/>
+                <constraint firstAttribute="trailing" secondItem="fjN-Gi-UqM" secondAttribute="trailing" id="mWn-14-NeH"/>
+                <constraint firstItem="ktJ-BR-kc7" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="yD0-RS-C3n"/>
+            </constraints>
+            <point key="canvasLocation" x="-664" y="182"/>
+        </view>
+        <searchDisplayController id="oB0-dY-bef">
+            <connections>
+                <outlet property="delegate" destination="-1" id="9nP-ez-ptL"/>
+                <outlet property="searchContentsController" destination="-1" id="2GT-As-4sv"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="gg2-17-BSt"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="oQX-Vy-FtY"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <image name="groups_public.png" width="66" height="66"/>
+        <image name="img_noData.png" width="212" height="179"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

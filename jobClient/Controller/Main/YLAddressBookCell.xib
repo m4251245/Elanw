@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YLAddressBookCell" id="KGk-i7-Jjw" customClass="YLAddressBookCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bEL-Od-Iqv">
+                        <rect key="frame" x="10" y="14" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="AVN-0F-olQ"/>
+                            <constraint firstAttribute="height" constant="30" id="mWy-gh-Q90"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWV-hi-xbN">
+                        <rect key="frame" x="56" y="19" width="194" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="OCx-BC-Dtz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gg_home_line2.png" translatesAutoresizingMaskIntoConstraints="NO" id="qbv-rU-BqN">
+                        <rect key="frame" x="0.0" y="58" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="RUG-96-3KN"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uD4-Sh-FVZ">
+                        <rect key="frame" x="10" y="14" width="30" height="30"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="5MA-kA-xJd"/>
+                            <constraint firstAttribute="width" constant="30" id="u9W-Bj-lAt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <state key="normal" title="网">
+                            <color key="titleColor" red="0.72549019607843135" green="0.72549019607843135" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="if0-Fs-fwR">
+                        <rect key="frame" x="258" y="15" width="49" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="49" id="4NF-gw-gz3"/>
+                            <constraint firstAttribute="height" constant="30" id="n6o-iM-bE7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="邀请">
+                            <color key="titleColor" red="1" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qbv-rU-BqN" secondAttribute="trailing" id="1IP-YW-56w"/>
+                    <constraint firstItem="bEL-Od-Iqv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="6yz-fS-6Ik"/>
+                    <constraint firstItem="qbv-rU-BqN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BwI-nV-b3S"/>
+                    <constraint firstAttribute="trailing" secondItem="if0-Fs-fwR" secondAttribute="trailing" constant="13" id="EcC-vz-wVd"/>
+                    <constraint firstItem="uD4-Sh-FVZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Eii-69-28d"/>
+                    <constraint firstItem="if0-Fs-fwR" firstAttribute="leading" secondItem="yWV-hi-xbN" secondAttribute="trailing" constant="8" id="HPI-3w-zGL"/>
+                    <constraint firstItem="yWV-hi-xbN" firstAttribute="leading" secondItem="uD4-Sh-FVZ" secondAttribute="trailing" constant="16" id="RlF-Wb-RXa"/>
+                    <constraint firstItem="uD4-Sh-FVZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="YJr-Jx-L5D"/>
+                    <constraint firstItem="yWV-hi-xbN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="ekJ-tY-kwg"/>
+                    <constraint firstItem="bEL-Od-Iqv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gKb-JX-DYG"/>
+                    <constraint firstAttribute="bottom" secondItem="qbv-rU-BqN" secondAttribute="bottom" id="wWm-Vi-DHM"/>
+                    <constraint firstItem="if0-Fs-fwR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="zrE-fd-Qug"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inviteBtn" destination="if0-Fs-fwR" id="fIT-rZ-K8k"/>
+                <outlet property="nameLb" destination="yWV-hi-xbN" id="49X-xx-sbZ"/>
+                <outlet property="titleBtn" destination="uD4-Sh-FVZ" id="2Uw-Rv-6F4"/>
+                <outlet property="titleImage" destination="bEL-Od-Iqv" id="lOb-un-PSC"/>
+            </connections>
+            <point key="canvasLocation" x="535" y="299"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gg_home_line2.png" width="320" height="1"/>
+    </resources>
+</document>
